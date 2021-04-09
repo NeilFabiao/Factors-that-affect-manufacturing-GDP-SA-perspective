@@ -1,0 +1,4951 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX1"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.P4141">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l header" scope="col">H01</th>
+<th class="l header" scope="col">H02</th>
+<th class="l header" scope="col">H03</th>
+<th class="l header" scope="col">H04</th>
+<th class="l header" scope="col">H05</th>
+<th class="l header" scope="col">H13</th>
+<th class="l header" scope="col">H14</th>
+<th class="l header" scope="col">H16</th>
+<th class="l header" scope="col">H17</th>
+<th class="l header" scope="col">H18</th>
+<th class="l header" scope="col">H25</th>
+<th class="r header" scope="col">MO011990</th>
+<th class="r header" scope="col">MO021990</th>
+<th class="r header" scope="col">MO031990</th>
+<th class="r header" scope="col">MO041990</th>
+<th class="r header" scope="col">MO051990</th>
+<th class="r header" scope="col">MO061990</th>
+<th class="r header" scope="col">MO071990</th>
+<th class="r header" scope="col">MO081990</th>
+<th class="r header" scope="col">MO091990</th>
+<th class="r header" scope="col">MO101990</th>
+<th class="r header" scope="col">MO111990</th>
+<th class="r header" scope="col">MO121990</th>
+<th class="r header" scope="col">MO011991</th>
+<th class="r header" scope="col">MO021991</th>
+<th class="r header" scope="col">MO031991</th>
+<th class="r header" scope="col">MO041991</th>
+<th class="r header" scope="col">MO051991</th>
+<th class="r header" scope="col">MO061991</th>
+<th class="r header" scope="col">MO071991</th>
+<th class="r header" scope="col">MO081991</th>
+<th class="r header" scope="col">MO091991</th>
+<th class="r header" scope="col">MO101991</th>
+<th class="r header" scope="col">MO111991</th>
+<th class="r header" scope="col">MO121991</th>
+<th class="r header" scope="col">MO011992</th>
+<th class="r header" scope="col">MO021992</th>
+<th class="r header" scope="col">MO031992</th>
+<th class="r header" scope="col">MO041992</th>
+<th class="r header" scope="col">MO051992</th>
+<th class="r header" scope="col">MO061992</th>
+<th class="r header" scope="col">MO071992</th>
+<th class="r header" scope="col">MO081992</th>
+<th class="r header" scope="col">MO091992</th>
+<th class="r header" scope="col">MO101992</th>
+<th class="r header" scope="col">MO111992</th>
+<th class="r header" scope="col">MO121992</th>
+<th class="r header" scope="col">MO011993</th>
+<th class="r header" scope="col">MO021993</th>
+<th class="r header" scope="col">MO031993</th>
+<th class="r header" scope="col">MO041993</th>
+<th class="r header" scope="col">MO051993</th>
+<th class="r header" scope="col">MO061993</th>
+<th class="r header" scope="col">MO071993</th>
+<th class="r header" scope="col">MO081993</th>
+<th class="r header" scope="col">MO091993</th>
+<th class="r header" scope="col">MO101993</th>
+<th class="r header" scope="col">MO111993</th>
+<th class="r header" scope="col">MO121993</th>
+<th class="r header" scope="col">MO011994</th>
+<th class="r header" scope="col">MO021994</th>
+<th class="r header" scope="col">MO031994</th>
+<th class="r header" scope="col">MO041994</th>
+<th class="r header" scope="col">MO051994</th>
+<th class="r header" scope="col">MO061994</th>
+<th class="r header" scope="col">MO071994</th>
+<th class="r header" scope="col">MO081994</th>
+<th class="r header" scope="col">MO091994</th>
+<th class="r header" scope="col">MO101994</th>
+<th class="r header" scope="col">MO111994</th>
+<th class="r header" scope="col">MO121994</th>
+<th class="r header" scope="col">MO011995</th>
+<th class="r header" scope="col">MO021995</th>
+<th class="r header" scope="col">MO031995</th>
+<th class="r header" scope="col">MO041995</th>
+<th class="r header" scope="col">MO051995</th>
+<th class="r header" scope="col">MO061995</th>
+<th class="r header" scope="col">MO071995</th>
+<th class="r header" scope="col">MO081995</th>
+<th class="r header" scope="col">MO091995</th>
+<th class="r header" scope="col">MO101995</th>
+<th class="r header" scope="col">MO111995</th>
+<th class="r header" scope="col">MO121995</th>
+<th class="r header" scope="col">MO011996</th>
+<th class="r header" scope="col">MO021996</th>
+<th class="r header" scope="col">MO031996</th>
+<th class="r header" scope="col">MO041996</th>
+<th class="r header" scope="col">MO051996</th>
+<th class="r header" scope="col">MO061996</th>
+<th class="r header" scope="col">MO071996</th>
+<th class="r header" scope="col">MO081996</th>
+<th class="r header" scope="col">MO091996</th>
+<th class="r header" scope="col">MO101996</th>
+<th class="r header" scope="col">MO111996</th>
+<th class="r header" scope="col">MO121996</th>
+<th class="r header" scope="col">MO011997</th>
+<th class="r header" scope="col">MO021997</th>
+<th class="r header" scope="col">MO031997</th>
+<th class="r header" scope="col">MO041997</th>
+<th class="r header" scope="col">MO051997</th>
+<th class="r header" scope="col">MO061997</th>
+<th class="r header" scope="col">MO071997</th>
+<th class="r header" scope="col">MO081997</th>
+<th class="r header" scope="col">MO091997</th>
+<th class="r header" scope="col">MO101997</th>
+<th class="r header" scope="col">MO111997</th>
+<th class="r header" scope="col">MO121997</th>
+<th class="r header" scope="col">MO011998</th>
+<th class="r header" scope="col">MO021998</th>
+<th class="r header" scope="col">MO031998</th>
+<th class="r header" scope="col">MO041998</th>
+<th class="r header" scope="col">MO051998</th>
+<th class="r header" scope="col">MO061998</th>
+<th class="r header" scope="col">MO071998</th>
+<th class="r header" scope="col">MO081998</th>
+<th class="r header" scope="col">MO091998</th>
+<th class="r header" scope="col">MO101998</th>
+<th class="r header" scope="col">MO111998</th>
+<th class="r header" scope="col">MO121998</th>
+<th class="r header" scope="col">MO011999</th>
+<th class="r header" scope="col">MO021999</th>
+<th class="r header" scope="col">MO031999</th>
+<th class="r header" scope="col">MO041999</th>
+<th class="r header" scope="col">MO051999</th>
+<th class="r header" scope="col">MO061999</th>
+<th class="r header" scope="col">MO071999</th>
+<th class="r header" scope="col">MO081999</th>
+<th class="r header" scope="col">MO091999</th>
+<th class="r header" scope="col">MO101999</th>
+<th class="r header" scope="col">MO111999</th>
+<th class="r header" scope="col">MO121999</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l data">P4141</td>
+<td class="l data">Electricity generated and available for distribution</td>
+<td class="l data">ELEKTS10</td>
+<td class="l data">Total - All producers</td>
+<td class="l data">Electricity available for distribution in South Africa</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Seasonally adjusted</td>
+<td class="l data">Gigawatt-hours</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Monthly</td>
+<td class="r data">12735.0</td>
+<td class="r data">12552.0</td>
+<td class="r data">12459.0</td>
+<td class="r data">12506.0</td>
+<td class="r data">12728.0</td>
+<td class="r data">12523.0</td>
+<td class="r data">12532.0</td>
+<td class="r data">12593.0</td>
+<td class="r data">12575.0</td>
+<td class="r data">12792.0</td>
+<td class="r data">13046.0</td>
+<td class="r data">12488.0</td>
+<td class="r data">12788.0</td>
+<td class="r data">12768.0</td>
+<td class="r data">13034.0</td>
+<td class="r data">12973.0</td>
+<td class="r data">12788.0</td>
+<td class="r data">12931.0</td>
+<td class="r data">12863.0</td>
+<td class="r data">12977.0</td>
+<td class="r data">12805.0</td>
+<td class="r data">12776.0</td>
+<td class="r data">12661.0</td>
+<td class="r data">12492.0</td>
+<td class="r data">12615.0</td>
+<td class="r data">12688.0</td>
+<td class="r data">12668.0</td>
+<td class="r data">12720.0</td>
+<td class="r data">12763.0</td>
+<td class="r data">12759.0</td>
+<td class="r data">12707.0</td>
+<td class="r data">12873.0</td>
+<td class="r data">12906.0</td>
+<td class="r data">13005.0</td>
+<td class="r data">12961.0</td>
+<td class="r data">12978.0</td>
+<td class="r data">13135.0</td>
+<td class="r data">13098.0</td>
+<td class="r data">13189.0</td>
+<td class="r data">13240.0</td>
+<td class="r data">13203.0</td>
+<td class="r data">13271.0</td>
+<td class="r data">13244.0</td>
+<td class="r data">13297.0</td>
+<td class="r data">13515.0</td>
+<td class="r data">13305.0</td>
+<td class="r data">13418.0</td>
+<td class="r data">13484.0</td>
+<td class="r data">13585.0</td>
+<td class="r data">13606.0</td>
+<td class="r data">13599.0</td>
+<td class="r data">13400.0</td>
+<td class="r data">13607.0</td>
+<td class="r data">13768.0</td>
+<td class="r data">13932.0</td>
+<td class="r data">13892.0</td>
+<td class="r data">13880.0</td>
+<td class="r data">13914.0</td>
+<td class="r data">14050.0</td>
+<td class="r data">14191.0</td>
+<td class="r data">14191.0</td>
+<td class="r data">14170.0</td>
+<td class="r data">14098.0</td>
+<td class="r data">14145</td>
+<td class="r data">14229.0</td>
+<td class="r data">14152.0</td>
+<td class="r data">14153.0</td>
+<td class="r data">14085.0</td>
+<td class="r data">14124.0</td>
+<td class="r data">14199.0</td>
+<td class="r data">14377.0</td>
+<td class="r data">14414.0</td>
+<td class="r data">14462.0</td>
+<td class="r data">14416.0</td>
+<td class="r data">14387.0</td>
+<td class="r data">14744.0</td>
+<td class="r data">14697.0</td>
+<td class="r data">14614.0</td>
+<td class="r data">15361.0</td>
+<td class="r data">15228.0</td>
+<td class="r data">14912.0</td>
+<td class="r data">15181.0</td>
+<td class="r data">15170.0</td>
+<td class="r data">15214.0</td>
+<td class="r data">15299.0</td>
+<td class="r data">15406.0</td>
+<td class="r data">15513.0</td>
+<td class="r data">15657.0</td>
+<td class="r data">15797.0</td>
+<td class="r data">15719.0</td>
+<td class="r data">15723.0</td>
+<td class="r data">15427.0</td>
+<td class="r data">15704.0</td>
+<td class="r data">15700.0</td>
+<td class="r data">15711.0</td>
+<td class="r data">15883.0</td>
+<td class="r data">15793.0</td>
+<td class="r data">15798.0</td>
+<td class="r data">15735.0</td>
+<td class="r data">15663.0</td>
+<td class="r data">15652.0</td>
+<td class="r data">15583.0</td>
+<td class="r data">15355.0</td>
+<td class="r data">15640.0</td>
+<td class="r data">15633.0</td>
+<td class="r data">15685.0</td>
+<td class="r data">15528.0</td>
+<td class="r data">15603.0</td>
+<td class="r data">15547.0</td>
+<td class="r data">15695.0</td>
+<td class="r data">15711.0</td>
+<td class="r data">15811.0</td>
+<td class="r data">15760.0</td>
+<td class="r data">15690.0</td>
+<td class="r data">15640.0</td>
+<td class="r data">15949.0</td>
+<td class="r data">16043.0</td>
+<td class="r data">16041.0</td>
+<td class="r data">16205.0</td>
+<td class="r data">16180.0</td>
+</tr>
+<tr>
+<td class="l data">P4141</td>
+<td class="l data">Electricity generated and available for distribution</td>
+<td class="l data">ELEKIN11</td>
+<td class="l data">Physical volume of electricity production</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Index</td>
+<td class="l data">Base: 2015=100</td>
+<td class="l data">Monthly</td>
+<td class="r data">65.0</td>
+<td class="r data">59.4</td>
+<td class="r data">65.0</td>
+<td class="r data">61.8</td>
+<td class="r data">67.3</td>
+<td class="r data">68.4</td>
+<td class="r data">71.1</td>
+<td class="r data">71.3</td>
+<td class="r data">65.3</td>
+<td class="r data">69.0</td>
+<td class="r data">67.1</td>
+<td class="r data">62.1</td>
+<td class="r data">64.9</td>
+<td class="r data">60.1</td>
+<td class="r data">66.4</td>
+<td class="r data">65.8</td>
+<td class="r data">69.1</td>
+<td class="r data">71.1</td>
+<td class="r data">74.2</td>
+<td class="r data">72.9</td>
+<td class="r data">66.9</td>
+<td class="r data">68.4</td>
+<td class="r data">65.0</td>
+<td class="r data">61.9</td>
+<td class="r data">64.2</td>
+<td class="r data">62.1</td>
+<td class="r data">65.9</td>
+<td class="r data">62.9</td>
+<td class="r data">68.1</td>
+<td class="r data">70.6</td>
+<td class="r data">73.0</td>
+<td class="r data">71.9</td>
+<td class="r data">66.9</td>
+<td class="r data">69.1</td>
+<td class="r data">66.3</td>
+<td class="r data">64.6</td>
+<td class="r data">67.3</td>
+<td class="r data">61.8</td>
+<td class="r data">69.3</td>
+<td class="r data">65.9</td>
+<td class="r data">70.6</td>
+<td class="r data">74.3</td>
+<td class="r data">76.2</td>
+<td class="r data">74.7</td>
+<td class="r data">70.5</td>
+<td class="r data">70.9</td>
+<td class="r data">68.7</td>
+<td class="r data">67.0</td>
+<td class="r data">69.1</td>
+<td class="r data">64.6</td>
+<td class="r data">71.6</td>
+<td class="r data">67.2</td>
+<td class="r data">73.5</td>
+<td class="r data">76.9</td>
+<td class="r data">80.1</td>
+<td class="r data">78.4</td>
+<td class="r data">72.4</td>
+<td class="r data">74.1</td>
+<td class="r data">72.5</td>
+<td class="r data">70.4</td>
+<td class="r data">72.7</td>
+<td class="r data">67.6</td>
+<td class="r data">74.4</td>
+<td class="r data">70</td>
+<td class="r data">76.5</td>
+<td class="r data">78.4</td>
+<td class="r data">81.0</td>
+<td class="r data">78.7</td>
+<td class="r data">73.4</td>
+<td class="r data">75.6</td>
+<td class="r data">74.5</td>
+<td class="r data">71.7</td>
+<td class="r data">75.0</td>
+<td class="r data">73.4</td>
+<td class="r data">77.2</td>
+<td class="r data">74.9</td>
+<td class="r data">82.0</td>
+<td class="r data">82.1</td>
+<td class="r data">90.3</td>
+<td class="r data">86.3</td>
+<td class="r data">78.8</td>
+<td class="r data">82.5</td>
+<td class="r data">80.0</td>
+<td class="r data">76.6</td>
+<td class="r data">80.7</td>
+<td class="r data">75.7</td>
+<td class="r data">81.6</td>
+<td class="r data">81.7</td>
+<td class="r data">87.8</td>
+<td class="r data">88.2</td>
+<td class="r data">92.5</td>
+<td class="r data">88.0</td>
+<td class="r data">84.2</td>
+<td class="r data">86.3</td>
+<td class="r data">82.0</td>
+<td class="r data">79.6</td>
+<td class="r data">81.7</td>
+<td class="r data">76.7</td>
+<td class="r data">82.5</td>
+<td class="r data">78.7</td>
+<td class="r data">86.0</td>
+<td class="r data">86.0</td>
+<td class="r data">89.4</td>
+<td class="r data">83.4</td>
+<td class="r data">81.3</td>
+<td class="r data">84.0</td>
+<td class="r data">79.2</td>
+<td class="r data">75.5</td>
+<td class="r data">79.7</td>
+<td class="r data">74.9</td>
+<td class="r data">81.6</td>
+<td class="r data">75.8</td>
+<td class="r data">82.5</td>
+<td class="r data">83.2</td>
+<td class="r data">87.5</td>
+<td class="r data">85.7</td>
+<td class="r data">81.5</td>
+<td class="r data">83.4</td>
+<td class="r data">80.8</td>
+<td class="r data">76.4</td>
+</tr>
+<tr>
+<td class="l data">P4141</td>
+<td class="l data">Electricity generated and available for distribution</td>
+<td class="l data">ELEKIS11</td>
+<td class="l data">Physical volume of electricity production</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Seasonally adjusted</td>
+<td class="l data">Index</td>
+<td class="l data">Base: 2015=100</td>
+<td class="l data">Monthly</td>
+<td class="r data">66.8</td>
+<td class="r data">65.7</td>
+<td class="r data">65.3</td>
+<td class="r data">65.2</td>
+<td class="r data">66.0</td>
+<td class="r data">65.1</td>
+<td class="r data">65.2</td>
+<td class="r data">66.1</td>
+<td class="r data">65.8</td>
+<td class="r data">67.1</td>
+<td class="r data">68.5</td>
+<td class="r data">65.7</td>
+<td class="r data">66.8</td>
+<td class="r data">66.6</td>
+<td class="r data">68.1</td>
+<td class="r data">68.1</td>
+<td class="r data">67.3</td>
+<td class="r data">68.0</td>
+<td class="r data">67.6</td>
+<td class="r data">68.0</td>
+<td class="r data">67.3</td>
+<td class="r data">66.9</td>
+<td class="r data">66.4</td>
+<td class="r data">65.5</td>
+<td class="r data">65.6</td>
+<td class="r data">66.3</td>
+<td class="r data">66.2</td>
+<td class="r data">66.1</td>
+<td class="r data">66.8</td>
+<td class="r data">66.9</td>
+<td class="r data">66.3</td>
+<td class="r data">67.3</td>
+<td class="r data">67.2</td>
+<td class="r data">67.9</td>
+<td class="r data">68.0</td>
+<td class="r data">68.3</td>
+<td class="r data">69.2</td>
+<td class="r data">68.5</td>
+<td class="r data">69.0</td>
+<td class="r data">69.3</td>
+<td class="r data">69.3</td>
+<td class="r data">70.1</td>
+<td class="r data">69.7</td>
+<td class="r data">70.0</td>
+<td class="r data">71.1</td>
+<td class="r data">70.0</td>
+<td class="r data">70.3</td>
+<td class="r data">70.5</td>
+<td class="r data">71.1</td>
+<td class="r data">71.4</td>
+<td class="r data">71.6</td>
+<td class="r data">70.7</td>
+<td class="r data">71.9</td>
+<td class="r data">72.5</td>
+<td class="r data">73.3</td>
+<td class="r data">73.2</td>
+<td class="r data">73.1</td>
+<td class="r data">73.4</td>
+<td class="r data">73.9</td>
+<td class="r data">74.7</td>
+<td class="r data">74.7</td>
+<td class="r data">74.5</td>
+<td class="r data">74.1</td>
+<td class="r data">74</td>
+<td class="r data">74.0</td>
+<td class="r data">74.1</td>
+<td class="r data">74.3</td>
+<td class="r data">74.0</td>
+<td class="r data">74.1</td>
+<td class="r data">74.8</td>
+<td class="r data">76.0</td>
+<td class="r data">76.3</td>
+<td class="r data">76.5</td>
+<td class="r data">77.5</td>
+<td class="r data">77.5</td>
+<td class="r data">79.0</td>
+<td class="r data">78.9</td>
+<td class="r data">78.4</td>
+<td class="r data">82.2</td>
+<td class="r data">81.4</td>
+<td class="r data">79.5</td>
+<td class="r data">81.2</td>
+<td class="r data">81.7</td>
+<td class="r data">81.8</td>
+<td class="r data">82.2</td>
+<td class="r data">82.8</td>
+<td class="r data">83.6</td>
+<td class="r data">84.2</td>
+<td class="r data">84.8</td>
+<td class="r data">84.2</td>
+<td class="r data">84.6</td>
+<td class="r data">83.2</td>
+<td class="r data">84.8</td>
+<td class="r data">84.3</td>
+<td class="r data">84.2</td>
+<td class="r data">84.8</td>
+<td class="r data">83.6</td>
+<td class="r data">83.9</td>
+<td class="r data">82.8</td>
+<td class="r data">82.6</td>
+<td class="r data">82.9</td>
+<td class="r data">82.3</td>
+<td class="r data">81.4</td>
+<td class="r data">79.3</td>
+<td class="r data">81.5</td>
+<td class="r data">82.1</td>
+<td class="r data">81.0</td>
+<td class="r data">80.9</td>
+<td class="r data">81.6</td>
+<td class="r data">82.1</td>
+<td class="r data">81.4</td>
+<td class="r data">79.8</td>
+<td class="r data">79.5</td>
+<td class="r data">79.5</td>
+<td class="r data">80.1</td>
+<td class="r data">81.5</td>
+<td class="r data">81.7</td>
+<td class="r data">81.5</td>
+<td class="r data">82.5</td>
+<td class="r data">81.6</td>
+</tr>
+<tr>
+<td class="l data">P4141</td>
+<td class="l data">Electricity generated and available for distribution</td>
+<td class="l data">ELEKTR11</td>
+<td class="l data">Total - All producers</td>
+<td class="l data">Electricity produced</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Gigawatt-hours</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Monthly</td>
+<td class="r data">13557.0</td>
+<td class="r data">12391.0</td>
+<td class="r data">13571.0</td>
+<td class="r data">12885.0</td>
+<td class="r data">14036.0</td>
+<td class="r data">14265.0</td>
+<td class="r data">14842.0</td>
+<td class="r data">14868.0</td>
+<td class="r data">13619.0</td>
+<td class="r data">14391.0</td>
+<td class="r data">14002.0</td>
+<td class="r data">12957.0</td>
+<td class="r data">13541.0</td>
+<td class="r data">12543.0</td>
+<td class="r data">13865.0</td>
+<td class="r data">13733.0</td>
+<td class="r data">14409.0</td>
+<td class="r data">14835.0</td>
+<td class="r data">15486.0</td>
+<td class="r data">15214.0</td>
+<td class="r data">13950.0</td>
+<td class="r data">14274.0</td>
+<td class="r data">13558.0</td>
+<td class="r data">12908.0</td>
+<td class="r data">13399.0</td>
+<td class="r data">12948.0</td>
+<td class="r data">13759.0</td>
+<td class="r data">13132.0</td>
+<td class="r data">14207.0</td>
+<td class="r data">14725.0</td>
+<td class="r data">15235.0</td>
+<td class="r data">14999.0</td>
+<td class="r data">13951.0</td>
+<td class="r data">14411.0</td>
+<td class="r data">13844.0</td>
+<td class="r data">13480.0</td>
+<td class="r data">14036.0</td>
+<td class="r data">12905.0</td>
+<td class="r data">14454.0</td>
+<td class="r data">13750.0</td>
+<td class="r data">14732.0</td>
+<td class="r data">15505.0</td>
+<td class="r data">15909.0</td>
+<td class="r data">15584.0</td>
+<td class="r data">14715.0</td>
+<td class="r data">14798.0</td>
+<td class="r data">14338.0</td>
+<td class="r data">13980.0</td>
+<td class="r data">14415.0</td>
+<td class="r data">13479.0</td>
+<td class="r data">14943.0</td>
+<td class="r data">14016.0</td>
+<td class="r data">15329.0</td>
+<td class="r data">16045.0</td>
+<td class="r data">16717.0</td>
+<td class="r data">16357.0</td>
+<td class="r data">15115.0</td>
+<td class="r data">15458.0</td>
+<td class="r data">15124.0</td>
+<td class="r data">14692.0</td>
+<td class="r data">15165.0</td>
+<td class="r data">14115.0</td>
+<td class="r data">15526.0</td>
+<td class="r data">14600</td>
+<td class="r data">15953.0</td>
+<td class="r data">16359.0</td>
+<td class="r data">16909.0</td>
+<td class="r data">16430.0</td>
+<td class="r data">15317.0</td>
+<td class="r data">15773.0</td>
+<td class="r data">15538.0</td>
+<td class="r data">14970.0</td>
+<td class="r data">15642.0</td>
+<td class="r data">15317.0</td>
+<td class="r data">16110.0</td>
+<td class="r data">15637.0</td>
+<td class="r data">17101.0</td>
+<td class="r data">17127.0</td>
+<td class="r data">18835.0</td>
+<td class="r data">18014.0</td>
+<td class="r data">16435.0</td>
+<td class="r data">17214.0</td>
+<td class="r data">16685.0</td>
+<td class="r data">15975.0</td>
+<td class="r data">16838.0</td>
+<td class="r data">15791.0</td>
+<td class="r data">17026.0</td>
+<td class="r data">17053.0</td>
+<td class="r data">18320.0</td>
+<td class="r data">18398.0</td>
+<td class="r data">19301.0</td>
+<td class="r data">18354.0</td>
+<td class="r data">17559.0</td>
+<td class="r data">18015.0</td>
+<td class="r data">17107.0</td>
+<td class="r data">16600.0</td>
+<td class="r data">17051.0</td>
+<td class="r data">15994.0</td>
+<td class="r data">17208.0</td>
+<td class="r data">16411.0</td>
+<td class="r data">17948.0</td>
+<td class="r data">17945.0</td>
+<td class="r data">18645.0</td>
+<td class="r data">17401.0</td>
+<td class="r data">16965.0</td>
+<td class="r data">17520.0</td>
+<td class="r data">16523.0</td>
+<td class="r data">15763.0</td>
+<td class="r data">16629.0</td>
+<td class="r data">15625.0</td>
+<td class="r data">17023.0</td>
+<td class="r data">15821.0</td>
+<td class="r data">17208.0</td>
+<td class="r data">17360.0</td>
+<td class="r data">18261.0</td>
+<td class="r data">17876.0</td>
+<td class="r data">17011.0</td>
+<td class="r data">17406.0</td>
+<td class="r data">16857.0</td>
+<td class="r data">15935.0</td>
+</tr>
+<tr>
+<td class="l data">P4141</td>
+<td class="l data">Electricity generated and available for distribution</td>
+<td class="l data">ELEKTR13</td>
+<td class="l data">Total - All producers</td>
+<td class="l data">Purchased outside South Africa (import)</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Gigawatt-hours</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Monthly</td>
+<td class="r data">6.0</td>
+<td class="r data">12.0</td>
+<td class="r data">12.0</td>
+<td class="r data">61.0</td>
+<td class="r data">58.0</td>
+<td class="r data">54.0</td>
+<td class="r data">25.0</td>
+<td class="r data">15.0</td>
+<td class="r data">9.0</td>
+<td class="r data">5.0</td>
+<td class="r data">5.0</td>
+<td class="r data">5.0</td>
+<td class="r data">34.0</td>
+<td class="r data">54.0</td>
+<td class="r data">50.0</td>
+<td class="r data">48.0</td>
+<td class="r data">17.0</td>
+<td class="r data">7.0</td>
+<td class="r data">7.0</td>
+<td class="r data">6.0</td>
+<td class="r data">5.0</td>
+<td class="r data">5.0</td>
+<td class="r data">5.0</td>
+<td class="r data">16.0</td>
+<td class="r data">41.0</td>
+<td class="r data">51.0</td>
+<td class="r data">48.0</td>
+<td class="r data">55.0</td>
+<td class="r data">43.0</td>
+<td class="r data">11.0</td>
+<td class="r data">25.0</td>
+<td class="r data">17.0</td>
+<td class="r data">26.0</td>
+<td class="r data">4.0</td>
+<td class="r data">7.0</td>
+<td class="r data">6.0</td>
+<td class="r data">6.0</td>
+<td class="r data">9.0</td>
+<td class="r data">7.0</td>
+<td class="r data">9.0</td>
+<td class="r data">11.0</td>
+<td class="r data">9.0</td>
+<td class="r data">9.0</td>
+<td class="r data">8.0</td>
+<td class="r data">7.0</td>
+<td class="r data">6.0</td>
+<td class="r data">9.0</td>
+<td class="r data">10.0</td>
+<td class="r data">35.0</td>
+<td class="r data">12.0</td>
+<td class="r data">1.0</td>
+<td class="r data">3.0</td>
+<td class="r data">1.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">2.0</td>
+<td class="r data">13.0</td>
+<td class="r data">12.0</td>
+<td class="r data">39.0</td>
+<td class="r data">38</td>
+<td class="r data">40.0</td>
+<td class="r data">7.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">1.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">26.0</td>
+<td class="r data">2.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">3.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">3.0</td>
+<td class="r data">0.0</td>
+<td class="r data">1.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">1.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">11.0</td>
+<td class="r data">52.0</td>
+<td class="r data">159.0</td>
+<td class="r data">176.0</td>
+<td class="r data">133.0</td>
+<td class="r data">187.0</td>
+<td class="r data">141.0</td>
+<td class="r data">667.0</td>
+<td class="r data">203.0</td>
+<td class="r data">161.0</td>
+<td class="r data">273.0</td>
+<td class="r data">212.0</td>
+<td class="r data">185.0</td>
+<td class="r data">201.0</td>
+<td class="r data">302.0</td>
+<td class="r data">682.0</td>
+<td class="r data">719.0</td>
+<td class="r data">654.0</td>
+<td class="r data">515.0</td>
+<td class="r data">613.0</td>
+<td class="r data">679.0</td>
+<td class="r data">688.0</td>
+<td class="r data">644.0</td>
+<td class="r data">791.0</td>
+</tr>
+<tr>
+<td class="l data">P4141</td>
+<td class="l data">Electricity generated and available for distribution</td>
+<td class="l data">ELEKTR12</td>
+<td class="l data">Total - All producers</td>
+<td class="l data">Consumed in power stations and auxiliary systems</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Gigawatt-hours</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Monthly</td>
+<td class="r data">1066.0</td>
+<td class="r data">995.0</td>
+<td class="r data">1065.0</td>
+<td class="r data">1022.0</td>
+<td class="r data">1019.0</td>
+<td class="r data">1052.0</td>
+<td class="r data">1064.0</td>
+<td class="r data">1179.0</td>
+<td class="r data">1032.0</td>
+<td class="r data">1115.0</td>
+<td class="r data">1076.0</td>
+<td class="r data">989.0</td>
+<td class="r data">1027.0</td>
+<td class="r data">989.0</td>
+<td class="r data">1082.0</td>
+<td class="r data">1126.0</td>
+<td class="r data">1171.0</td>
+<td class="r data">1168.0</td>
+<td class="r data">1187.0</td>
+<td class="r data">1166.0</td>
+<td class="r data">1089.0</td>
+<td class="r data">1056.0</td>
+<td class="r data">1003.0</td>
+<td class="r data">935.0</td>
+<td class="r data">969.0</td>
+<td class="r data">980.0</td>
+<td class="r data">1066.0</td>
+<td class="r data">974.0</td>
+<td class="r data">1133.0</td>
+<td class="r data">1116.0</td>
+<td class="r data">1083.0</td>
+<td class="r data">1122.0</td>
+<td class="r data">993.0</td>
+<td class="r data">1010.0</td>
+<td class="r data">1011.0</td>
+<td class="r data">1012.0</td>
+<td class="r data">1074.0</td>
+<td class="r data">898.0</td>
+<td class="r data">1023.0</td>
+<td class="r data">1006.0</td>
+<td class="r data">1118.0</td>
+<td class="r data">1207.0</td>
+<td class="r data">1166.0</td>
+<td class="r data">1152.0</td>
+<td class="r data">1105.0</td>
+<td class="r data">1094.0</td>
+<td class="r data">1020.0</td>
+<td class="r data">982.0</td>
+<td class="r data">1113.0</td>
+<td class="r data">1004.0</td>
+<td class="r data">1129.0</td>
+<td class="r data">1117.0</td>
+<td class="r data">1214.0</td>
+<td class="r data">1167.0</td>
+<td class="r data">1216.0</td>
+<td class="r data">1222.0</td>
+<td class="r data">1171.0</td>
+<td class="r data">1174.0</td>
+<td class="r data">1093.0</td>
+<td class="r data">1135.0</td>
+<td class="r data">1187.0</td>
+<td class="r data">1045.0</td>
+<td class="r data">1241.0</td>
+<td class="r data">1124</td>
+<td class="r data">1134.0</td>
+<td class="r data">1130.0</td>
+<td class="r data">1201.0</td>
+<td class="r data">1152.0</td>
+<td class="r data">1035.0</td>
+<td class="r data">1142.0</td>
+<td class="r data">1143.0</td>
+<td class="r data">1167.0</td>
+<td class="r data">1216.0</td>
+<td class="r data">1199.0</td>
+<td class="r data">1354.0</td>
+<td class="r data">1269.0</td>
+<td class="r data">1348.0</td>
+<td class="r data">1309.0</td>
+<td class="r data">1412.0</td>
+<td class="r data">1351.0</td>
+<td class="r data">1240.0</td>
+<td class="r data">1309.0</td>
+<td class="r data">1342.0</td>
+<td class="r data">1255.0</td>
+<td class="r data">1324.0</td>
+<td class="r data">1246.0</td>
+<td class="r data">1366.0</td>
+<td class="r data">1311.0</td>
+<td class="r data">1419.0</td>
+<td class="r data">1323.0</td>
+<td class="r data">1474.0</td>
+<td class="r data">1424.0</td>
+<td class="r data">1434.0</td>
+<td class="r data">1376.0</td>
+<td class="r data">1308.0</td>
+<td class="r data">1243.0</td>
+<td class="r data">1329.0</td>
+<td class="r data">1227.0</td>
+<td class="r data">1328.0</td>
+<td class="r data">1297.0</td>
+<td class="r data">1432.0</td>
+<td class="r data">1423.0</td>
+<td class="r data">1447.0</td>
+<td class="r data">1301.0</td>
+<td class="r data">1289.0</td>
+<td class="r data">1324.0</td>
+<td class="r data">1195.0</td>
+<td class="r data">1109.0</td>
+<td class="r data">1315.0</td>
+<td class="r data">1199.0</td>
+<td class="r data">1286.0</td>
+<td class="r data">1223.0</td>
+<td class="r data">1282.0</td>
+<td class="r data">1274.0</td>
+<td class="r data">1344.0</td>
+<td class="r data">1316.0</td>
+<td class="r data">1273.0</td>
+<td class="r data">1332.0</td>
+<td class="r data">1238.0</td>
+<td class="r data">1217.0</td>
+</tr>
+<tr>
+<td class="l data">P4141</td>
+<td class="l data">Electricity generated and available for distribution</td>
+<td class="l data">ELEKTR14</td>
+<td class="l data">Total - All producers</td>
+<td class="l data">Sold outside South Africa (export)</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Gigawatt-hours</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Monthly</td>
+<td class="r data">97.0</td>
+<td class="r data">114.0</td>
+<td class="r data">112.0</td>
+<td class="r data">105.0</td>
+<td class="r data">108.0</td>
+<td class="r data">139.0</td>
+<td class="r data">121.0</td>
+<td class="r data">120.0</td>
+<td class="r data">146.0</td>
+<td class="r data">123.0</td>
+<td class="r data">184.0</td>
+<td class="r data">164.0</td>
+<td class="r data">113.0</td>
+<td class="r data">133.0</td>
+<td class="r data">131.0</td>
+<td class="r data">123.0</td>
+<td class="r data">127.0</td>
+<td class="r data">163.0</td>
+<td class="r data">142.0</td>
+<td class="r data">140.0</td>
+<td class="r data">171.0</td>
+<td class="r data">144.0</td>
+<td class="r data">216.0</td>
+<td class="r data">192.0</td>
+<td class="r data">117.0</td>
+<td class="r data">138.0</td>
+<td class="r data">136.0</td>
+<td class="r data">128.0</td>
+<td class="r data">132.0</td>
+<td class="r data">169.0</td>
+<td class="r data">148.0</td>
+<td class="r data">146.0</td>
+<td class="r data">178.0</td>
+<td class="r data">160.0</td>
+<td class="r data">225.0</td>
+<td class="r data">195.0</td>
+<td class="r data">206.0</td>
+<td class="r data">214.0</td>
+<td class="r data">206.0</td>
+<td class="r data">175.0</td>
+<td class="r data">195.0</td>
+<td class="r data">223.0</td>
+<td class="r data">233.0</td>
+<td class="r data">246.0</td>
+<td class="r data">243.0</td>
+<td class="r data">230.0</td>
+<td class="r data">236.0</td>
+<td class="r data">195.0</td>
+<td class="r data">161.0</td>
+<td class="r data">193.0</td>
+<td class="r data">222.0</td>
+<td class="r data">179.0</td>
+<td class="r data">224.0</td>
+<td class="r data">249.0</td>
+<td class="r data">246.0</td>
+<td class="r data">242.0</td>
+<td class="r data">225.0</td>
+<td class="r data">266.0</td>
+<td class="r data">279.0</td>
+<td class="r data">193.0</td>
+<td class="r data">209.0</td>
+<td class="r data">224.0</td>
+<td class="r data">179.0</td>
+<td class="r data">164</td>
+<td class="r data">172.0</td>
+<td class="r data">238.0</td>
+<td class="r data">268.0</td>
+<td class="r data">284.0</td>
+<td class="r data">343.0</td>
+<td class="r data">325.0</td>
+<td class="r data">325.0</td>
+<td class="r data">269.0</td>
+<td class="r data">272.0</td>
+<td class="r data">408.0</td>
+<td class="r data">395.0</td>
+<td class="r data">388.0</td>
+<td class="r data">440.0</td>
+<td class="r data">493.0</td>
+<td class="r data">561.0</td>
+<td class="r data">512.0</td>
+<td class="r data">497.0</td>
+<td class="r data">549.0</td>
+<td class="r data">551.0</td>
+<td class="r data">513.0</td>
+<td class="r data">508.0</td>
+<td class="r data">457.0</td>
+<td class="r data">505.0</td>
+<td class="r data">498.0</td>
+<td class="r data">478.0</td>
+<td class="r data">602.0</td>
+<td class="r data">640.0</td>
+<td class="r data">627.0</td>
+<td class="r data">623.0</td>
+<td class="r data">634.0</td>
+<td class="r data">564.0</td>
+<td class="r data">479.0</td>
+<td class="r data">330.0</td>
+<td class="r data">360.0</td>
+<td class="r data">325.0</td>
+<td class="r data">367.0</td>
+<td class="r data">388.0</td>
+<td class="r data">429.0</td>
+<td class="r data">472.0</td>
+<td class="r data">350.0</td>
+<td class="r data">343.0</td>
+<td class="r data">400.0</td>
+<td class="r data">465.0</td>
+<td class="r data">303.0</td>
+<td class="r data">346.0</td>
+<td class="r data">267.0</td>
+<td class="r data">248.0</td>
+<td class="r data">217.0</td>
+<td class="r data">318.0</td>
+<td class="r data">347.0</td>
+<td class="r data">381.0</td>
+<td class="r data">465.0</td>
+<td class="r data">480.0</td>
+<td class="r data">440.0</td>
+<td class="r data">432.0</td>
+<td class="r data">325.0</td>
+</tr>
+<tr>
+<td class="l data">P4141</td>
+<td class="l data">Electricity generated and available for distribution</td>
+<td class="l data">ELEKTR10</td>
+<td class="l data">Total - All producers</td>
+<td class="l data">Electricity available for distribution in South Africa</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Gigawatt-hours</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Monthly</td>
+<td class="r data">12400.0</td>
+<td class="r data">11294.0</td>
+<td class="r data">12406.0</td>
+<td class="r data">11819.0</td>
+<td class="r data">12967.0</td>
+<td class="r data">13128.0</td>
+<td class="r data">13682.0</td>
+<td class="r data">13584.0</td>
+<td class="r data">12450.0</td>
+<td class="r data">13158.0</td>
+<td class="r data">12747.0</td>
+<td class="r data">11809.0</td>
+<td class="r data">12435.0</td>
+<td class="r data">11475.0</td>
+<td class="r data">12702.0</td>
+<td class="r data">12532.0</td>
+<td class="r data">13128.0</td>
+<td class="r data">13511.0</td>
+<td class="r data">14164.0</td>
+<td class="r data">13914.0</td>
+<td class="r data">12695.0</td>
+<td class="r data">13079.0</td>
+<td class="r data">12344.0</td>
+<td class="r data">11797.0</td>
+<td class="r data">12354.0</td>
+<td class="r data">11881.0</td>
+<td class="r data">12605.0</td>
+<td class="r data">12085.0</td>
+<td class="r data">12985.0</td>
+<td class="r data">13451.0</td>
+<td class="r data">14029.0</td>
+<td class="r data">13748.0</td>
+<td class="r data">12806.0</td>
+<td class="r data">13245.0</td>
+<td class="r data">12615.0</td>
+<td class="r data">12279.0</td>
+<td class="r data">12762.0</td>
+<td class="r data">11802.0</td>
+<td class="r data">13232.0</td>
+<td class="r data">12578.0</td>
+<td class="r data">13430.0</td>
+<td class="r data">14084.0</td>
+<td class="r data">14519.0</td>
+<td class="r data">14194.0</td>
+<td class="r data">13374.0</td>
+<td class="r data">13480.0</td>
+<td class="r data">13091.0</td>
+<td class="r data">12813.0</td>
+<td class="r data">13176.0</td>
+<td class="r data">12294.0</td>
+<td class="r data">13593.0</td>
+<td class="r data">12723.0</td>
+<td class="r data">13892.0</td>
+<td class="r data">14629.0</td>
+<td class="r data">15255.0</td>
+<td class="r data">14893.0</td>
+<td class="r data">13719.0</td>
+<td class="r data">14018.0</td>
+<td class="r data">13752.0</td>
+<td class="r data">13366.0</td>
+<td class="r data">13782.0</td>
+<td class="r data">12858.0</td>
+<td class="r data">14145.0</td>
+<td class="r data">13350</td>
+<td class="r data">14687.0</td>
+<td class="r data">14998.0</td>
+<td class="r data">15440.0</td>
+<td class="r data">14994.0</td>
+<td class="r data">13939.0</td>
+<td class="r data">14306.0</td>
+<td class="r data">14070.0</td>
+<td class="r data">13534.0</td>
+<td class="r data">14155.0</td>
+<td class="r data">13710.0</td>
+<td class="r data">14361.0</td>
+<td class="r data">14006.0</td>
+<td class="r data">15315.0</td>
+<td class="r data">15325.0</td>
+<td class="r data">16862.0</td>
+<td class="r data">16151.0</td>
+<td class="r data">14698.0</td>
+<td class="r data">15356.0</td>
+<td class="r data">14792.0</td>
+<td class="r data">14207.0</td>
+<td class="r data">15009.0</td>
+<td class="r data">14088.0</td>
+<td class="r data">15155.0</td>
+<td class="r data">15247.0</td>
+<td class="r data">16423.0</td>
+<td class="r data">16474.0</td>
+<td class="r data">17187.0</td>
+<td class="r data">16303.0</td>
+<td class="r data">15503.0</td>
+<td class="r data">16005.0</td>
+<td class="r data">15235.0</td>
+<td class="r data">14878.0</td>
+<td class="r data">15403.0</td>
+<td class="r data">14459.0</td>
+<td class="r data">15714.0</td>
+<td class="r data">14923.0</td>
+<td class="r data">16261.0</td>
+<td class="r data">16280.0</td>
+<td class="r data">16867.0</td>
+<td class="r data">16417.0</td>
+<td class="r data">15536.0</td>
+<td class="r data">15957.0</td>
+<td class="r data">15136.0</td>
+<td class="r data">14563.0</td>
+<td class="r data">15153.0</td>
+<td class="r data">14360.0</td>
+<td class="r data">15791.0</td>
+<td class="r data">15063.0</td>
+<td class="r data">16327.0</td>
+<td class="r data">16393.0</td>
+<td class="r data">17051.0</td>
+<td class="r data">16708.0</td>
+<td class="r data">15937.0</td>
+<td class="r data">16322.0</td>
+<td class="r data">15831.0</td>
+<td class="r data">15184.0</td>
+</tr>
+<tr>
+<td class="l data">P4141</td>
+<td class="l data">Electricity generated and available for distribution</td>
+<td class="l data">ELEKTR21</td>
+<td class="l data">Eskom</td>
+<td class="l data">Electricity produced</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Gigawatt-hours</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Monthly</td>
+<td class="r data">12728.0</td>
+<td class="r data">11607.0</td>
+<td class="r data">12674.0</td>
+<td class="r data">12035.0</td>
+<td class="r data">13094.0</td>
+<td class="r data">13287.0</td>
+<td class="r data">13853.0</td>
+<td class="r data">13942.0</td>
+<td class="r data">12748.0</td>
+<td class="r data">13508.0</td>
+<td class="r data">13107.0</td>
+<td class="r data">12157.0</td>
+<td class="r data">12687.0</td>
+<td class="r data">11730.0</td>
+<td class="r data">12856.0</td>
+<td class="r data">12841.0</td>
+<td class="r data">13584.0</td>
+<td class="r data">13929.0</td>
+<td class="r data">14555.0</td>
+<td class="r data">14228.0</td>
+<td class="r data">13161.0</td>
+<td class="r data">13409.0</td>
+<td class="r data">12702.0</td>
+<td class="r data">12062.0</td>
+<td class="r data">12569.0</td>
+<td class="r data">12104.0</td>
+<td class="r data">12868.0</td>
+<td class="r data">12327.0</td>
+<td class="r data">13300.0</td>
+<td class="r data">13832.0</td>
+<td class="r data">14347.0</td>
+<td class="r data">14114.0</td>
+<td class="r data">13045.0</td>
+<td class="r data">13474.0</td>
+<td class="r data">12882.0</td>
+<td class="r data">12574.0</td>
+<td class="r data">13133.0</td>
+<td class="r data">12097.0</td>
+<td class="r data">13673.0</td>
+<td class="r data">12986.0</td>
+<td class="r data">13916.0</td>
+<td class="r data">14638.0</td>
+<td class="r data">14839.0</td>
+<td class="r data">14532.0</td>
+<td class="r data">13730.0</td>
+<td class="r data">13811.0</td>
+<td class="r data">13435.0</td>
+<td class="r data">13003.0</td>
+<td class="r data">13425.0</td>
+<td class="r data">12576.0</td>
+<td class="r data">14034.0</td>
+<td class="r data">13101.0</td>
+<td class="r data">14299.0</td>
+<td class="r data">14973.0</td>
+<td class="r data">15666.0</td>
+<td class="r data">15278.0</td>
+<td class="r data">14171.0</td>
+<td class="r data">14423.0</td>
+<td class="r data">14178.0</td>
+<td class="r data">13754.0</td>
+<td class="r data">14187.0</td>
+<td class="r data">13241.0</td>
+<td class="r data">14649.0</td>
+<td class="r data">13558</td>
+<td class="r data">14830.0</td>
+<td class="r data">15291.0</td>
+<td class="r data">15852.0</td>
+<td class="r data">15346.0</td>
+<td class="r data">14307.0</td>
+<td class="r data">14761.0</td>
+<td class="r data">14550.0</td>
+<td class="r data">14143.0</td>
+<td class="r data">14924.0</td>
+<td class="r data">14633.0</td>
+<td class="r data">15307.0</td>
+<td class="r data">14752.0</td>
+<td class="r data">16149.0</td>
+<td class="r data">16088.0</td>
+<td class="r data">17779.0</td>
+<td class="r data">16923.0</td>
+<td class="r data">15535.0</td>
+<td class="r data">16290.0</td>
+<td class="r data">15725.0</td>
+<td class="r data">15082.0</td>
+<td class="r data">15889.0</td>
+<td class="r data">14938.0</td>
+<td class="r data">16165.0</td>
+<td class="r data">16078.0</td>
+<td class="r data">17286.0</td>
+<td class="r data">17275.0</td>
+<td class="r data">18292.0</td>
+<td class="r data">17302.0</td>
+<td class="r data">16605.0</td>
+<td class="r data">17034.0</td>
+<td class="r data">16163.0</td>
+<td class="r data">15681.0</td>
+<td class="r data">16070.0</td>
+<td class="r data">14981.0</td>
+<td class="r data">16300.0</td>
+<td class="r data">15418.0</td>
+<td class="r data">16946.0</td>
+<td class="r data">16920.0</td>
+<td class="r data">17641.0</td>
+<td class="r data">16360.0</td>
+<td class="r data">15994.0</td>
+<td class="r data">16510.0</td>
+<td class="r data">15624.0</td>
+<td class="r data">14898.0</td>
+<td class="r data">15662.0</td>
+<td class="r data">14754.0</td>
+<td class="r data">16229.0</td>
+<td class="r data">14941.0</td>
+<td class="r data">16301.0</td>
+<td class="r data">16460.0</td>
+<td class="r data">17340.0</td>
+<td class="r data">17014.0</td>
+<td class="r data">16122.0</td>
+<td class="r data">16549.0</td>
+<td class="r data">15963.0</td>
+<td class="r data">15056.0</td>
+</tr>
+<tr>
+<td class="l data">P4141</td>
+<td class="l data">Electricity generated and available for distribution</td>
+<td class="l data">ELEKTR23</td>
+<td class="l data">Eskom</td>
+<td class="l data">Purchased outside South Africa (import)</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Gigawatt-hours</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Monthly</td>
+<td class="r data">6.0</td>
+<td class="r data">12.0</td>
+<td class="r data">12.0</td>
+<td class="r data">61.0</td>
+<td class="r data">58.0</td>
+<td class="r data">54.0</td>
+<td class="r data">25.0</td>
+<td class="r data">15.0</td>
+<td class="r data">9.0</td>
+<td class="r data">5.0</td>
+<td class="r data">5.0</td>
+<td class="r data">5.0</td>
+<td class="r data">34.0</td>
+<td class="r data">54.0</td>
+<td class="r data">50.0</td>
+<td class="r data">48.0</td>
+<td class="r data">17.0</td>
+<td class="r data">7.0</td>
+<td class="r data">7.0</td>
+<td class="r data">6.0</td>
+<td class="r data">5.0</td>
+<td class="r data">5.0</td>
+<td class="r data">5.0</td>
+<td class="r data">16.0</td>
+<td class="r data">41.0</td>
+<td class="r data">51.0</td>
+<td class="r data">48.0</td>
+<td class="r data">55.0</td>
+<td class="r data">43.0</td>
+<td class="r data">11.0</td>
+<td class="r data">25.0</td>
+<td class="r data">17.0</td>
+<td class="r data">26.0</td>
+<td class="r data">4.0</td>
+<td class="r data">7.0</td>
+<td class="r data">6.0</td>
+<td class="r data">6.0</td>
+<td class="r data">9.0</td>
+<td class="r data">7.0</td>
+<td class="r data">9.0</td>
+<td class="r data">11.0</td>
+<td class="r data">9.0</td>
+<td class="r data">9.0</td>
+<td class="r data">8.0</td>
+<td class="r data">7.0</td>
+<td class="r data">6.0</td>
+<td class="r data">9.0</td>
+<td class="r data">10.0</td>
+<td class="r data">35.0</td>
+<td class="r data">12.0</td>
+<td class="r data">1.0</td>
+<td class="r data">3.0</td>
+<td class="r data">1.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">2.0</td>
+<td class="r data">13.0</td>
+<td class="r data">12.0</td>
+<td class="r data">39.0</td>
+<td class="r data">38</td>
+<td class="r data">40.0</td>
+<td class="r data">7.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">1.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">26.0</td>
+<td class="r data">2.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">3.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">3.0</td>
+<td class="r data">0.0</td>
+<td class="r data">1.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">1.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">0.0</td>
+<td class="r data">11.0</td>
+<td class="r data">52.0</td>
+<td class="r data">159.0</td>
+<td class="r data">176.0</td>
+<td class="r data">133.0</td>
+<td class="r data">187.0</td>
+<td class="r data">141.0</td>
+<td class="r data">667.0</td>
+<td class="r data">203.0</td>
+<td class="r data">161.0</td>
+<td class="r data">273.0</td>
+<td class="r data">212.0</td>
+<td class="r data">185.0</td>
+<td class="r data">201.0</td>
+<td class="r data">302.0</td>
+<td class="r data">682.0</td>
+<td class="r data">719.0</td>
+<td class="r data">654.0</td>
+<td class="r data">515.0</td>
+<td class="r data">613.0</td>
+<td class="r data">679.0</td>
+<td class="r data">688.0</td>
+<td class="r data">644.0</td>
+<td class="r data">791.0</td>
+</tr>
+<tr>
+<td class="l data">P4141</td>
+<td class="l data">Electricity generated and available for distribution</td>
+<td class="l data">ELEKTR22</td>
+<td class="l data">Eskom</td>
+<td class="l data">Consumed in power stations and auxiliary systems</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Gigawatt-hours</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Monthly</td>
+<td class="r data">987.0</td>
+<td class="r data">919.0</td>
+<td class="r data">982.0</td>
+<td class="r data">938.0</td>
+<td class="r data">933.0</td>
+<td class="r data">955.0</td>
+<td class="r data">980.0</td>
+<td class="r data">1094.0</td>
+<td class="r data">951.0</td>
+<td class="r data">1031.0</td>
+<td class="r data">983.0</td>
+<td class="r data">903.0</td>
+<td class="r data">951.0</td>
+<td class="r data">911.0</td>
+<td class="r data">1000.0</td>
+<td class="r data">1042.0</td>
+<td class="r data">1090.0</td>
+<td class="r data">1086.0</td>
+<td class="r data">1094.0</td>
+<td class="r data">1074.0</td>
+<td class="r data">1007.0</td>
+<td class="r data">968.0</td>
+<td class="r data">931.0</td>
+<td class="r data">854.0</td>
+<td class="r data">895.0</td>
+<td class="r data">909.0</td>
+<td class="r data">973.0</td>
+<td class="r data">892.0</td>
+<td class="r data">1047.0</td>
+<td class="r data">1030.0</td>
+<td class="r data">1005.0</td>
+<td class="r data">1037.0</td>
+<td class="r data">913.0</td>
+<td class="r data">927.0</td>
+<td class="r data">921.0</td>
+<td class="r data">924.0</td>
+<td class="r data">983.0</td>
+<td class="r data">846.0</td>
+<td class="r data">973.0</td>
+<td class="r data">953.0</td>
+<td class="r data">1059.0</td>
+<td class="r data">1144.0</td>
+<td class="r data">1069.0</td>
+<td class="r data">1056.0</td>
+<td class="r data">1005.0</td>
+<td class="r data">1021.0</td>
+<td class="r data">950.0</td>
+<td class="r data">898.0</td>
+<td class="r data">1004.0</td>
+<td class="r data">894.0</td>
+<td class="r data">1011.0</td>
+<td class="r data">1016.0</td>
+<td class="r data">1125.0</td>
+<td class="r data">1053.0</td>
+<td class="r data">1098.0</td>
+<td class="r data">1107.0</td>
+<td class="r data">1056.0</td>
+<td class="r data">1051.0</td>
+<td class="r data">972.0</td>
+<td class="r data">1027.0</td>
+<td class="r data">1083.0</td>
+<td class="r data">963.0</td>
+<td class="r data">1133.0</td>
+<td class="r data">1006</td>
+<td class="r data">998.0</td>
+<td class="r data">1007.0</td>
+<td class="r data">1072.0</td>
+<td class="r data">1025.0</td>
+<td class="r data">918.0</td>
+<td class="r data">1017.0</td>
+<td class="r data">1024.0</td>
+<td class="r data">1064.0</td>
+<td class="r data">1129.0</td>
+<td class="r data">1104.0</td>
+<td class="r data">1253.0</td>
+<td class="r data">1166.0</td>
+<td class="r data">1232.0</td>
+<td class="r data">1191.0</td>
+<td class="r data">1286.0</td>
+<td class="r data">1227.0</td>
+<td class="r data">1128.0</td>
+<td class="r data">1194.0</td>
+<td class="r data">1222.0</td>
+<td class="r data">1177.0</td>
+<td class="r data">1243.0</td>
+<td class="r data">1174.0</td>
+<td class="r data">1289.0</td>
+<td class="r data">1202.0</td>
+<td class="r data">1307.0</td>
+<td class="r data">1228.0</td>
+<td class="r data">1373.0</td>
+<td class="r data">1314.0</td>
+<td class="r data">1330.0</td>
+<td class="r data">1262.0</td>
+<td class="r data">1196.0</td>
+<td class="r data">1153.0</td>
+<td class="r data">1230.0</td>
+<td class="r data">1119.0</td>
+<td class="r data">1220.0</td>
+<td class="r data">1185.0</td>
+<td class="r data">1317.0</td>
+<td class="r data">1310.0</td>
+<td class="r data">1331.0</td>
+<td class="r data">1192.0</td>
+<td class="r data">1177.0</td>
+<td class="r data">1205.0</td>
+<td class="r data">1088.0</td>
+<td class="r data">1020.0</td>
+<td class="r data">1222.0</td>
+<td class="r data">1105.0</td>
+<td class="r data">1192.0</td>
+<td class="r data">1129.0</td>
+<td class="r data">1180.0</td>
+<td class="r data">1180.0</td>
+<td class="r data">1246.0</td>
+<td class="r data">1223.0</td>
+<td class="r data">1173.0</td>
+<td class="r data">1230.0</td>
+<td class="r data">1135.0</td>
+<td class="r data">1129.0</td>
+</tr>
+<tr>
+<td class="l data">P4141</td>
+<td class="l data">Electricity generated and available for distribution</td>
+<td class="l data">ELEKTR24</td>
+<td class="l data">Eskom</td>
+<td class="l data">Sold outside South Africa (export)</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Gigawatt-hours</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Monthly</td>
+<td class="r data">97.0</td>
+<td class="r data">114.0</td>
+<td class="r data">112.0</td>
+<td class="r data">105.0</td>
+<td class="r data">108.0</td>
+<td class="r data">139.0</td>
+<td class="r data">121.0</td>
+<td class="r data">120.0</td>
+<td class="r data">146.0</td>
+<td class="r data">123.0</td>
+<td class="r data">184.0</td>
+<td class="r data">164.0</td>
+<td class="r data">113.0</td>
+<td class="r data">133.0</td>
+<td class="r data">131.0</td>
+<td class="r data">123.0</td>
+<td class="r data">127.0</td>
+<td class="r data">163.0</td>
+<td class="r data">142.0</td>
+<td class="r data">140.0</td>
+<td class="r data">171.0</td>
+<td class="r data">144.0</td>
+<td class="r data">216.0</td>
+<td class="r data">192.0</td>
+<td class="r data">117.0</td>
+<td class="r data">138.0</td>
+<td class="r data">136.0</td>
+<td class="r data">128.0</td>
+<td class="r data">132.0</td>
+<td class="r data">169.0</td>
+<td class="r data">148.0</td>
+<td class="r data">146.0</td>
+<td class="r data">178.0</td>
+<td class="r data">160.0</td>
+<td class="r data">225.0</td>
+<td class="r data">195.0</td>
+<td class="r data">206.0</td>
+<td class="r data">214.0</td>
+<td class="r data">206.0</td>
+<td class="r data">175.0</td>
+<td class="r data">195.0</td>
+<td class="r data">223.0</td>
+<td class="r data">233.0</td>
+<td class="r data">246.0</td>
+<td class="r data">243.0</td>
+<td class="r data">230.0</td>
+<td class="r data">236.0</td>
+<td class="r data">195.0</td>
+<td class="r data">161.0</td>
+<td class="r data">193.0</td>
+<td class="r data">222.0</td>
+<td class="r data">179.0</td>
+<td class="r data">224.0</td>
+<td class="r data">249.0</td>
+<td class="r data">246.0</td>
+<td class="r data">242.0</td>
+<td class="r data">225.0</td>
+<td class="r data">266.0</td>
+<td class="r data">279.0</td>
+<td class="r data">193.0</td>
+<td class="r data">209.0</td>
+<td class="r data">224.0</td>
+<td class="r data">179.0</td>
+<td class="r data">164</td>
+<td class="r data">172.0</td>
+<td class="r data">238.0</td>
+<td class="r data">268.0</td>
+<td class="r data">284.0</td>
+<td class="r data">343.0</td>
+<td class="r data">325.0</td>
+<td class="r data">325.0</td>
+<td class="r data">269.0</td>
+<td class="r data">272.0</td>
+<td class="r data">408.0</td>
+<td class="r data">395.0</td>
+<td class="r data">388.0</td>
+<td class="r data">440.0</td>
+<td class="r data">493.0</td>
+<td class="r data">561.0</td>
+<td class="r data">512.0</td>
+<td class="r data">497.0</td>
+<td class="r data">549.0</td>
+<td class="r data">551.0</td>
+<td class="r data">513.0</td>
+<td class="r data">508.0</td>
+<td class="r data">457.0</td>
+<td class="r data">505.0</td>
+<td class="r data">498.0</td>
+<td class="r data">478.0</td>
+<td class="r data">602.0</td>
+<td class="r data">640.0</td>
+<td class="r data">627.0</td>
+<td class="r data">623.0</td>
+<td class="r data">634.0</td>
+<td class="r data">564.0</td>
+<td class="r data">479.0</td>
+<td class="r data">330.0</td>
+<td class="r data">360.0</td>
+<td class="r data">325.0</td>
+<td class="r data">367.0</td>
+<td class="r data">388.0</td>
+<td class="r data">429.0</td>
+<td class="r data">472.0</td>
+<td class="r data">350.0</td>
+<td class="r data">343.0</td>
+<td class="r data">400.0</td>
+<td class="r data">465.0</td>
+<td class="r data">303.0</td>
+<td class="r data">346.0</td>
+<td class="r data">267.0</td>
+<td class="r data">248.0</td>
+<td class="r data">217.0</td>
+<td class="r data">318.0</td>
+<td class="r data">347.0</td>
+<td class="r data">381.0</td>
+<td class="r data">465.0</td>
+<td class="r data">480.0</td>
+<td class="r data">440.0</td>
+<td class="r data">432.0</td>
+<td class="r data">325.0</td>
+</tr>
+<tr>
+<td class="l data">P4141</td>
+<td class="l data">Electricity generated and available for distribution</td>
+<td class="l data">ELEKTR20</td>
+<td class="l data">Eskom</td>
+<td class="l data">Electricity available for distribution in South Africa</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Gigawatt-hours</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Monthly</td>
+<td class="r data">11650.0</td>
+<td class="r data">10586.0</td>
+<td class="r data">11592.0</td>
+<td class="r data">11053.0</td>
+<td class="r data">12111.0</td>
+<td class="r data">12247.0</td>
+<td class="r data">12777.0</td>
+<td class="r data">12743.0</td>
+<td class="r data">11660.0</td>
+<td class="r data">12359.0</td>
+<td class="r data">11945.0</td>
+<td class="r data">11095.0</td>
+<td class="r data">11657.0</td>
+<td class="r data">10740.0</td>
+<td class="r data">11775.0</td>
+<td class="r data">11724.0</td>
+<td class="r data">12384.0</td>
+<td class="r data">12687.0</td>
+<td class="r data">13326.0</td>
+<td class="r data">13020.0</td>
+<td class="r data">11988.0</td>
+<td class="r data">12302.0</td>
+<td class="r data">11560.0</td>
+<td class="r data">11032.0</td>
+<td class="r data">11598.0</td>
+<td class="r data">11108.0</td>
+<td class="r data">11807.0</td>
+<td class="r data">11362.0</td>
+<td class="r data">12164.0</td>
+<td class="r data">12644.0</td>
+<td class="r data">13219.0</td>
+<td class="r data">12948.0</td>
+<td class="r data">11980.0</td>
+<td class="r data">12391.0</td>
+<td class="r data">11743.0</td>
+<td class="r data">11461.0</td>
+<td class="r data">11950.0</td>
+<td class="r data">11046.0</td>
+<td class="r data">12501.0</td>
+<td class="r data">11867.0</td>
+<td class="r data">12673.0</td>
+<td class="r data">13280.0</td>
+<td class="r data">13546.0</td>
+<td class="r data">13238.0</td>
+<td class="r data">12489.0</td>
+<td class="r data">12566.0</td>
+<td class="r data">12258.0</td>
+<td class="r data">11920.0</td>
+<td class="r data">12295.0</td>
+<td class="r data">11501.0</td>
+<td class="r data">12802.0</td>
+<td class="r data">11909.0</td>
+<td class="r data">12951.0</td>
+<td class="r data">13671.0</td>
+<td class="r data">14322.0</td>
+<td class="r data">13929.0</td>
+<td class="r data">12890.0</td>
+<td class="r data">13106.0</td>
+<td class="r data">12927.0</td>
+<td class="r data">12536.0</td>
+<td class="r data">12908.0</td>
+<td class="r data">12066.0</td>
+<td class="r data">13376.0</td>
+<td class="r data">12426</td>
+<td class="r data">13700.0</td>
+<td class="r data">14053.0</td>
+<td class="r data">14512.0</td>
+<td class="r data">14037.0</td>
+<td class="r data">13046.0</td>
+<td class="r data">13419.0</td>
+<td class="r data">13201.0</td>
+<td class="r data">12810.0</td>
+<td class="r data">13524.0</td>
+<td class="r data">13121.0</td>
+<td class="r data">13659.0</td>
+<td class="r data">13224.0</td>
+<td class="r data">14479.0</td>
+<td class="r data">14404.0</td>
+<td class="r data">15932.0</td>
+<td class="r data">15184.0</td>
+<td class="r data">13910.0</td>
+<td class="r data">14547.0</td>
+<td class="r data">13952.0</td>
+<td class="r data">13392.0</td>
+<td class="r data">14141.0</td>
+<td class="r data">13307.0</td>
+<td class="r data">14371.0</td>
+<td class="r data">14381.0</td>
+<td class="r data">15501.0</td>
+<td class="r data">15446.0</td>
+<td class="r data">16279.0</td>
+<td class="r data">15361.0</td>
+<td class="r data">14653.0</td>
+<td class="r data">15138.0</td>
+<td class="r data">14403.0</td>
+<td class="r data">14049.0</td>
+<td class="r data">14521.0</td>
+<td class="r data">13554.0</td>
+<td class="r data">14914.0</td>
+<td class="r data">14042.0</td>
+<td class="r data">15374.0</td>
+<td class="r data">15368.0</td>
+<td class="r data">15979.0</td>
+<td class="r data">15485.0</td>
+<td class="r data">14677.0</td>
+<td class="r data">15066.0</td>
+<td class="r data">14344.0</td>
+<td class="r data">13787.0</td>
+<td class="r data">14279.0</td>
+<td class="r data">13583.0</td>
+<td class="r data">15091.0</td>
+<td class="r data">14277.0</td>
+<td class="r data">15522.0</td>
+<td class="r data">15587.0</td>
+<td class="r data">16228.0</td>
+<td class="r data">15939.0</td>
+<td class="r data">15148.0</td>
+<td class="r data">15567.0</td>
+<td class="r data">15040.0</td>
+<td class="r data">14393.0</td>
+</tr>
+<tr>
+<td class="l data">P4141</td>
+<td class="l data">Electricity generated and available for distribution</td>
+<td class="l data">ELEKTRWC</td>
+<td class="l data">Electricity distributed</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Province:</td>
+<td class="l data">Western Cape</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Gigawatt-hours</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Monthly</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">P4141</td>
+<td class="l data">Electricity generated and available for distribution</td>
+<td class="l data">ELEKTREC</td>
+<td class="l data">Electricity distributed</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Province:</td>
+<td class="l data">Eastern Cape</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Gigawatt-hours</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Monthly</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">P4141</td>
+<td class="l data">Electricity generated and available for distribution</td>
+<td class="l data">ELEKTRNC</td>
+<td class="l data">Electricity distributed</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Province:</td>
+<td class="l data">Northern Cape</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Gigawatt-hours</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Monthly</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">P4141</td>
+<td class="l data">Electricity generated and available for distribution</td>
+<td class="l data">ELEKTRFS</td>
+<td class="l data">Electricity distributed</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Province:</td>
+<td class="l data">Free State</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Gigawatt-hours</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Monthly</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">P4141</td>
+<td class="l data">Electricity generated and available for distribution</td>
+<td class="l data">ELEKTRKZ</td>
+<td class="l data">Electricity distributed</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Province:</td>
+<td class="l data">KwaZulu-Natal</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Gigawatt-hours</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Monthly</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">P4141</td>
+<td class="l data">Electricity generated and available for distribution</td>
+<td class="l data">ELEKTRNW</td>
+<td class="l data">Electricity distributed</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Province:</td>
+<td class="l data">North west</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Gigawatt-hours</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Monthly</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">P4141</td>
+<td class="l data">Electricity generated and available for distribution</td>
+<td class="l data">ELEKTRGT</td>
+<td class="l data">Electricity distributed</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Province:</td>
+<td class="l data">Gauteng</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Gigawatt-hours</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Monthly</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">P4141</td>
+<td class="l data">Electricity generated and available for distribution</td>
+<td class="l data">ELEKTRML</td>
+<td class="l data">Electricity distributed</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Province:</td>
+<td class="l data">Mpumalanga</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Gigawatt-hours</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Monthly</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">P4141</td>
+<td class="l data">Electricity generated and available for distribution</td>
+<td class="l data">ELEKTRLP</td>
+<td class="l data">Electricity distributed</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Province:</td>
+<td class="l data">Limpopo</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Gigawatt-hours</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Monthly</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">P4141</td>
+<td class="l data">Electricity generated and available for distribution</td>
+<td class="l data">ELEKTRSA</td>
+<td class="l data">Electricity distributed</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">South Africa</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Gigawatt-hours</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Monthly</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>

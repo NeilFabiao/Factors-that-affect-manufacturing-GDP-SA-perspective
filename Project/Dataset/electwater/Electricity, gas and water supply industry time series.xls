@@ -1,0 +1,5388 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.SIS1">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l header" scope="col">H01</th>
+<th class="l header" scope="col">H02</th>
+<th class="l header" scope="col">H03</th>
+<th class="l header" scope="col">H04</th>
+<th class="l header" scope="col">H05</th>
+<th class="l header" scope="col">H06</th>
+<th class="l header" scope="col">H13</th>
+<th class="l header" scope="col">H15</th>
+<th class="l header" scope="col">H17</th>
+<th class="r header" scope="col">H23</th>
+<th class="r header" scope="col">H24</th>
+<th class="l header" scope="col">H25</th>
+<th class="r header" scope="col">Y2006</th>
+<th class="r header" scope="col">Y2010</th>
+<th class="r header" scope="col">Y2013</th>
+<th class="r header" scope="col">Y2016</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FINC</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Total income</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">45722</td>
+<td class="r data">86332</td>
+<td class="r data">151409</td>
+<td class="r data">201316</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FINC</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Total income</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">3500</td>
+<td class="r data">6009</td>
+<td class="r data">9143</td>
+<td class="r data">11946</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FINC</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Total income</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">9777</td>
+<td class="r data">14847</td>
+<td class="r data">22074</td>
+<td class="r data">28711</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FINC</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Total income</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">58999</td>
+<td class="r data">107188</td>
+<td class="r data">182626</td>
+<td class="r data">241973</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FEXP</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Total expenditure</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">38982</td>
+<td class="r data">81495</td>
+<td class="r data">144445</td>
+<td class="r data">195911</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FEXP</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Total expenditure</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">2589</td>
+<td class="r data">4081</td>
+<td class="r data">6182</td>
+<td class="r data">7750</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FEXP</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Total expenditure</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">8492</td>
+<td class="r data">13517</td>
+<td class="r data">19266</td>
+<td class="r data">24330</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FEXP</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Total expenditure</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">50063</td>
+<td class="r data">99093</td>
+<td class="r data">169893</td>
+<td class="r data">227991</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FOPEN</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Total value of opening inventories</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">2854</td>
+<td class="r data">6619</td>
+<td class="r data">10034</td>
+<td class="r data">16232</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FOPEN</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Total value of opening inventories</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">84</td>
+<td class="r data">104</td>
+<td class="r data">63</td>
+<td class="r data">90</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FOPEN</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Total value of opening inventories</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">80</td>
+<td class="r data">130</td>
+<td class="r data">291</td>
+<td class="r data">290</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FOPEN</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Total value of opening inventories</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">3018</td>
+<td class="r data">6853</td>
+<td class="r data">10388</td>
+<td class="r data">16613</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCLOSE</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Total value of closing inventories</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">3314</td>
+<td class="r data">7470</td>
+<td class="r data">12220</td>
+<td class="r data">18003</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCLOSE</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Total value of closing inventories</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">75</td>
+<td class="r data">48</td>
+<td class="r data">68</td>
+<td class="r data">87</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCLOSE</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Total value of closing inventories</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">72</td>
+<td class="r data">137</td>
+<td class="r data">362</td>
+<td class="r data">317</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCLOSE</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Total value of closing inventories</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">3461</td>
+<td class="r data">7656</td>
+<td class="r data">12651</td>
+<td class="r data">18407</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPROF</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Net profit or loss before tax</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">7201</td>
+<td class="r data">5688</td>
+<td class="r data">9151</td>
+<td class="r data">7176</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPROF</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Net profit or loss before tax</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">901</td>
+<td class="r data">1873</td>
+<td class="r data">2967</td>
+<td class="r data">4193</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPROF</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Net profit or loss before tax</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">1277</td>
+<td class="r data">1338</td>
+<td class="r data">2878</td>
+<td class="r data">4407</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPROF</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Net profit or loss before tax</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">9379</td>
+<td class="r data">8898</td>
+<td class="r data">14996</td>
+<td class="r data">15776</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCAPEXNEW</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Capital expenditure on new assets</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">11407</td>
+<td class="r data">57697</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">67898</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCAPEXNEW</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Capital expenditure on new assets</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">94</td>
+<td class="r data">193</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">116</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCAPEXNEW</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Capital expenditure on new assets</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">1182</td>
+<td class="r data">2418</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">7028</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCAPEXNEW</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Capital expenditure on new assets</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">12683</td>
+<td class="r data">60308</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">75042</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPROFAFTER</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Net profit or loss after tax</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">5044</td>
+<td class="r data">3812</td>
+<td class="r data">6929</td>
+<td class="r data">4612</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPROFAFTER</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Net profit or loss after tax</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">594</td>
+<td class="r data">1261</td>
+<td class="r data">2121</td>
+<td class="r data">3187</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPROFAFTER</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Net profit or loss after tax</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">1162</td>
+<td class="r data">1312</td>
+<td class="r data">2852</td>
+<td class="r data">4364</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPROFAFTER</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Net profit or loss after tax</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">6800</td>
+<td class="r data">6384</td>
+<td class="r data">11902</td>
+<td class="r data">12163</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FTURN</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Turnover</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">40220</td>
+<td class="r data">79943</td>
+<td class="r data">144957</td>
+<td class="r data">194126</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FTURN</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Turnover</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">3488</td>
+<td class="r data">5972</td>
+<td class="r data">9006</td>
+<td class="r data">11244</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FTURN</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Turnover</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">8761</td>
+<td class="r data">13597</td>
+<td class="r data">20985</td>
+<td class="r data">26808</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FTURN</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Turnover</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">52469</td>
+<td class="r data">99512</td>
+<td class="r data">174948</td>
+<td class="r data">232178</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPROMAR</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Profit margin</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Percentage</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">12.5</td>
+<td class="r data">4.8</td>
+<td class="r data">4.8</td>
+<td class="r data">2.4</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPROMAR</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Profit margin</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Percentage</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">17</td>
+<td class="r data">21.1</td>
+<td class="r data">23.6</td>
+<td class="r data">28.3</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPROMAR</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Profit margin</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Percentage</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">13.3</td>
+<td class="r data">9.6</td>
+<td class="r data">13.6</td>
+<td class="r data">16.3</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPROMAR</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Profit margin</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Percentage</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">13</td>
+<td class="r data">6.4</td>
+<td class="r data">6.8</td>
+<td class="r data">5.2</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FSALES</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Sales and services</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">40154</td>
+<td class="r data">79753</td>
+<td class="r data">144957</td>
+<td class="r data">193899</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FSALES</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Sales and services</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">3488</td>
+<td class="r data">5972</td>
+<td class="r data">9006</td>
+<td class="r data">11244</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FSALES</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Sales and services</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">8676</td>
+<td class="r data">13590</td>
+<td class="r data">20986</td>
+<td class="r data">26791</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FSALES</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Sales and services</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">52318</td>
+<td class="r data">99314</td>
+<td class="r data">174948</td>
+<td class="r data">231934</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIRENT</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Rental income</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">66</td>
+<td class="r data">190</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">227</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIRENT</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Rental income</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIRENT</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Rental income</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">86</td>
+<td class="r data">7</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">16</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIRENT</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Rental income</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">152</td>
+<td class="r data">198</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">244</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIINTER</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Interest received</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">2998</td>
+<td class="r data">1819</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">3431</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIINTER</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Interest received</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">12</td>
+<td class="r data">27</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">10</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIINTER</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Interest received</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">408</td>
+<td class="r data">494</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">551</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIINTER</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Interest received</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">3417</td>
+<td class="r data">2339</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">3991</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FSUBS</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Government subsidies</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">0</td>
+<td class="r data">332</td>
+<td class="r data">781</td>
+<td class="r data">971</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FSUBS</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Government subsidies</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">46</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FSUBS</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Government subsidies</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">84</td>
+<td class="r data">132</td>
+<td class="r data">346</td>
+<td class="r data">494</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FSUBS</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Government subsidies</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">84</td>
+<td class="r data">464</td>
+<td class="r data">1127</td>
+<td class="r data">1511</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FOTHIN</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Other  income</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">2504</td>
+<td class="r data">4238</td>
+<td class="r data">5671</td>
+<td class="r data">2788</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FOTHIN</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Other  income</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">0</td>
+<td class="r data">10</td>
+<td class="r data">137</td>
+<td class="r data">646</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FOTHIN</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Other  income</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">523</td>
+<td class="r data">624</td>
+<td class="r data">742</td>
+<td class="r data">859</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FOTHIN</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Other  income</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">3028</td>
+<td class="r data">4873</td>
+<td class="r data">6551</td>
+<td class="r data">4293</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPURCH</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Purchases</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">13714</td>
+<td class="r data">34276</td>
+<td class="r data">64249</td>
+<td class="r data">91329</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPURCH</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Purchases</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">1258</td>
+<td class="r data">3491</td>
+<td class="r data">5242</td>
+<td class="r data">6586</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPURCH</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Purchases</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">3441</td>
+<td class="r data">5873</td>
+<td class="r data">8863</td>
+<td class="r data">12946</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPURCH</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Purchases</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">18413</td>
+<td class="r data">43640</td>
+<td class="r data">78354</td>
+<td class="r data">110861</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FSALW</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Salaries and wages</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">7755</td>
+<td class="r data">14775</td>
+<td class="r data">18639</td>
+<td class="r data">25581</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FSALW</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Salaries and wages</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">83</td>
+<td class="r data">173</td>
+<td class="r data">244</td>
+<td class="r data">284</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FSALW</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Salaries and wages</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">1599</td>
+<td class="r data">2456</td>
+<td class="r data">3274</td>
+<td class="r data">4803</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FSALW</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Salaries and wages</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">9437</td>
+<td class="r data">17404</td>
+<td class="r data">22158</td>
+<td class="r data">30668</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FSUBCO</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Subcontractors and labour brokers</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">94</td>
+<td class="r data">1329</td>
+<td class="r data">5076</td>
+<td class="r data">4835</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FSUBCO</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Subcontractors and labour brokers</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">6</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FSUBCO</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Subcontractors and labour brokers</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">172</td>
+<td class="r data">251</td>
+<td class="r data">573</td>
+<td class="r data">74</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FSUBCO</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Subcontractors and labour brokers</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">273</td>
+<td class="r data">1580</td>
+<td class="r data">5649</td>
+<td class="r data">4909</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FMOTOREXP</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Motor vehicle running expenditure</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">21</td>
+<td class="r data">474</td>
+<td class="r data">754</td>
+<td class="r data">916</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FMOTOREXP</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Motor vehicle running expenditure</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">4</td>
+<td class="r data">4</td>
+<td class="r data">4</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FMOTOREXP</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Motor vehicle running expenditure</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">29</td>
+<td class="r data">37</td>
+<td class="r data">70</td>
+<td class="r data">75</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FMOTOREXP</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Motor vehicle running expenditure</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">53</td>
+<td class="r data">515</td>
+<td class="r data">827</td>
+<td class="r data">991</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FEINTER</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Interest paid</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">5176</td>
+<td class="r data">3541</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">16876</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FEINTER</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Interest paid</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">60</td>
+<td class="r data">19</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">75</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FEINTER</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Interest paid</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">960</td>
+<td class="r data">730</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">454</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FEINTER</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Interest paid</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">6196</td>
+<td class="r data">4289</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">17405</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FEDEPR</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Depreciation and amortisation</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">4584</td>
+<td class="r data">6552</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">19916</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FEDEPR</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Depreciation and amortisation</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">111</td>
+<td class="r data">168</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">139</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FEDEPR</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Depreciation and amortisation</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">420</td>
+<td class="r data">799</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">945</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FEDEPR</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Depreciation and amortisation</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">5115</td>
+<td class="r data">7519</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">21000</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FELOSS</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Losses on financial and other assets</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">147</td>
+<td class="r data">1197</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">1722</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FELOSS</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Losses on financial and other assets</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">63</td>
+<td class="r data">1</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">8</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FELOSS</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Losses on financial and other assets</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">108</td>
+<td class="r data">712</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">349</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FELOSS</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Losses on financial and other assets</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">318</td>
+<td class="r data">1910</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">2079</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FEREPAIR</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Repair and maintenance</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">3777</td>
+<td class="r data">5795</td>
+<td class="r data">11168</td>
+<td class="r data">14388</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FEREPAIR</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Repair and maintenance</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">9</td>
+<td class="r data">6</td>
+<td class="r data">70</td>
+<td class="r data">69</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FEREPAIR</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Repair and maintenance</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">153</td>
+<td class="r data">425</td>
+<td class="r data">394</td>
+<td class="r data">523</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FEREPAIR</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Repair and maintenance</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">3939</td>
+<td class="r data">6226</td>
+<td class="r data">11632</td>
+<td class="r data">14980</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FECUSTOM</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Custom and excise duties</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">8052</td>
+<td class="r data">8225</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FECUSTOM</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Custom and excise duties</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">1</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FECUSTOM</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Custom and excise duties</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FECUSTOM</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Custom and excise duties</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">8053</td>
+<td class="r data">8225</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FEOTHER</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Other expenditure</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">3714</td>
+<td class="r data">13556</td>
+<td class="r data">36507</td>
+<td class="r data">12123</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FEOTHER</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Other expenditure</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">996</td>
+<td class="r data">219</td>
+<td class="r data">621</td>
+<td class="r data">589</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FEOTHER</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Other expenditure</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">1610</td>
+<td class="r data">2234</td>
+<td class="r data">6092</td>
+<td class="r data">4161</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FEOTHER</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Other expenditure</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">6320</td>
+<td class="r data">16010</td>
+<td class="r data">43220</td>
+<td class="r data">16873</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCAPLAND</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Capital expenditure on new assets  land, buildings  and construction</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">2119</td>
+<td class="r data">1400</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">55305</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCAPLAND</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Capital expenditure on new assets  land, buildings  and construction</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">0</td>
+<td class="r data">2</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCAPLAND</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Capital expenditure on new assets  land, buildings  and construction</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">667</td>
+<td class="r data">913</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">4163</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCAPLAND</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Capital expenditure on new assets  land, buildings  and construction</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">2786</td>
+<td class="r data">2315</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">59468</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCAPPLANT</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Capital expenditure on new assets plant, machinery and other office equipment</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">8262</td>
+<td class="r data">18082</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">11537</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCAPPLANT</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Capital expenditure on new assets plant, machinery and other office equipment</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">92</td>
+<td class="r data">33</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">113</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCAPPLANT</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Capital expenditure on new assets plant, machinery and other office equipment</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">463</td>
+<td class="r data">544</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">225</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCAPPLANT</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Capital expenditure on new assets plant, machinery and other office equipment</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">8817</td>
+<td class="r data">18659</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">11875</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCAPVEH</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Capital expenditure on new assets motor vehicles  and other transport equipment</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">800</td>
+<td class="r data">1465</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">290</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCAPVEH</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Capital expenditure on new assets motor vehicles  and other transport equipment</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">2</td>
+<td class="r data">3</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCAPVEH</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Capital expenditure on new assets motor vehicles  and other transport equipment</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">21</td>
+<td class="r data">44</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">106</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCAPVEH</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Capital expenditure on new assets motor vehicles  and other transport equipment</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">823</td>
+<td class="r data">1512</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">396</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCAPCOM</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Capital expenditure on new assets computer equipment and software</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">219</td>
+<td class="r data">451</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">437</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCAPCOM</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Capital expenditure on new assets computer equipment and software</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">0</td>
+<td class="r data">27</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">3</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCAPCOM</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Capital expenditure on new assets computer equipment and software</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">30</td>
+<td class="r data">38</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">87</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCAPCOM</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Capital expenditure on new assets computer equipment and software</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">249</td>
+<td class="r data">516</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">527</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCAPOTH</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Other capital expenditure on new assets</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">7</td>
+<td class="r data">36299</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">329</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCAPOTH</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Other capital expenditure on new assets</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">0</td>
+<td class="r data">129</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCAPOTH</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Other capital expenditure on new assets</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">1</td>
+<td class="r data">879</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">2447</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FCAPOTH</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Other capital expenditure on new assets</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">8</td>
+<td class="r data">37307</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">2776</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FFEMEMP</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Female employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Number</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">7735</td>
+<td class="r data">11889</td>
+<td class="r data">14371</td>
+<td class="r data">15017</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FFEMEMP</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Female employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Number</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">89</td>
+<td class="r data">99</td>
+<td class="r data">89</td>
+<td class="r data">116</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FFEMEMP</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Female employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Number</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">2193</td>
+<td class="r data">3044</td>
+<td class="r data">3179</td>
+<td class="r data">3674</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FFEMEMP</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Female employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Number</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">10017</td>
+<td class="r data">15032</td>
+<td class="r data">17640</td>
+<td class="r data">18807</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FMALEEMP</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Male employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Number</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">24255</td>
+<td class="r data">27867</td>
+<td class="r data">31689</td>
+<td class="r data">31270</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FMALEEMP</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Male employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Number</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">222</td>
+<td class="r data">316</td>
+<td class="r data">343</td>
+<td class="r data">307</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FMALEEMP</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Male employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Number</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">7623</td>
+<td class="r data">8022</td>
+<td class="r data">8814</td>
+<td class="r data">8645</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FMALEEMP</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Male employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Number</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">32100</td>
+<td class="r data">36205</td>
+<td class="r data">40846</td>
+<td class="r data">40222</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FTOTEMP</td>
+<td class="l data">Generation, transmission and distribution of electricity</td>
+<td class="l data">4111</td>
+<td class="l data">Total employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Number</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">31990</td>
+<td class="r data">39756</td>
+<td class="r data">46060</td>
+<td class="r data">46287</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FTOTEMP</td>
+<td class="l data">Manufacturing and distribution of gaseous fuels through mains</td>
+<td class="l data">4120</td>
+<td class="l data">Total employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Number</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">311</td>
+<td class="r data">415</td>
+<td class="r data">432</td>
+<td class="r data">423</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FTOTEMP</td>
+<td class="l data">Collection, purification and distribution of water</td>
+<td class="l data">4200</td>
+<td class="l data">Total employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Number</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">9816</td>
+<td class="r data">11066</td>
+<td class="r data">11993</td>
+<td class="r data">12319</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FTOTEMP</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Total employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Number</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">42117</td>
+<td class="r data">51237</td>
+<td class="r data">58485</td>
+<td class="r data">59029</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FGWHCOAL</td>
+<td class="l data">Electricity available for distribution</td>
+<td class="l data">P001</td>
+<td class="l data">Coal</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigawatt-hours (GWh)</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">209187</td>
+<td class="r data">217717</td>
+<td class="r data">215691</td>
+<td class="r data">203054</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FGWHNUC</td>
+<td class="l data">Electricity available for distribution</td>
+<td class="l data">P002</td>
+<td class="l data">Natural gas</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigawatt-hours (GWh)</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">3380</td>
+<td class="r data">9317</td>
+<td class="r data">8410</td>
+<td class="r data">7573</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FGWHGAS</td>
+<td class="l data">Electricity available for distribution</td>
+<td class="l data">P003</td>
+<td class="l data">Nuclear material</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigawatt-hours (GWh)</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">11293</td>
+<td class="r data">12807</td>
+<td class="r data">11954</td>
+<td class="r data">12305</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FGWHDIESEL</td>
+<td class="l data">Electricity available for distribution</td>
+<td class="l data">P004</td>
+<td class="l data">Diesel</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigawatt-hours (GWh)</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">1904</td>
+<td class="r data">4007</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FGWHWATER</td>
+<td class="l data">Electricity available for distribution</td>
+<td class="l data">P005</td>
+<td class="l data">Water (hydroelectricity)</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigawatt-hours (GWh)</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">1141</td>
+<td class="r data">1274</td>
+<td class="r data">1077</td>
+<td class="r data">783</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FGWHWIND</td>
+<td class="l data">Electricity available for distribution</td>
+<td class="l data">P006</td>
+<td class="l data">Wind</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigawatt-hours (GWh)</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">6</td>
+<td class="r data">18</td>
+<td class="r data">2126</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FGWHSOLAR</td>
+<td class="l data">Electricity available for distribution</td>
+<td class="l data">P007</td>
+<td class="l data">Sun (solar electricity)</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigawatt-hours (GWh)</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">0</td>
+<td class="r data">2151</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FGWHPUMP</td>
+<td class="l data">Electricity available for distribution</td>
+<td class="l data">P008</td>
+<td class="l data">Electricity generated from pump storage stations</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigawatt-hours (GWh)</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">2867</td>
+<td class="r data">2742</td>
+<td class="r data">3006</td>
+<td class="r data">2934</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FGWHWASTE</td>
+<td class="l data">Electricity available for distribution</td>
+<td class="l data">P009</td>
+<td class="l data">Waste material (e.g. bagasse and wood waste)</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigawatt-hours (GWh)</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">1678</td>
+<td class="r data">1305</td>
+<td class="r data">2304</td>
+<td class="r data">2073</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FGWHTOTGEN</td>
+<td class="l data">Electricity available for distribution</td>
+<td class="l data">P010</td>
+<td class="l data">Total electricity generated</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigawatt-hours (GWh)</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">233249</td>
+<td class="r data">239474</td>
+<td class="r data">244364</td>
+<td class="r data">237006</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FGWHIMPORT</td>
+<td class="l data">Electricity available for distribution</td>
+<td class="l data">P011</td>
+<td class="l data">Electricity supplied from other countries (imports)</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigawatt-hours (GWh)</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">10310</td>
+<td class="r data">10048</td>
+<td class="r data">7698</td>
+<td class="r data">9757</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FGWHCONSUMED</td>
+<td class="l data">Electricity available for distribution</td>
+<td class="l data">P012</td>
+<td class="l data">Electricity consumed in power stations and pump storage systems</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigawatt-hours (GWh)</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">3814</td>
+<td class="r data">3934</td>
+<td class="r data">4650</td>
+<td class="r data">5384</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FGWHEXPORT</td>
+<td class="l data">Electricity available for distribution</td>
+<td class="l data">P013</td>
+<td class="l data">Electricity supplied to other countries (exports)</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigawatt-hours (GWh)</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">13122</td>
+<td class="r data">13228</td>
+<td class="r data">13791</td>
+<td class="r data">13540</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FGWHTOTAVAIL</td>
+<td class="l data">Electricity available for distribution</td>
+<td class="l data">P014</td>
+<td class="l data">Total electricity available for distribution</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigawatt-hours (GWh)</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">226623</td>
+<td class="r data">232360</td>
+<td class="r data">233621</td>
+<td class="r data">227839</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIREDIS</td>
+<td class="l data">Sales of electricity</td>
+<td class="l data">P015</td>
+<td class="l data">Redistributors (mainly municipalities)</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">28328</td>
+<td class="r data">51989</td>
+<td class="r data">74439</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIRESID</td>
+<td class="l data">Sales of electricity</td>
+<td class="l data">P016</td>
+<td class="l data">Residential</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">9650</td>
+<td class="r data">15997</td>
+<td class="r data">17175</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FICOMM</td>
+<td class="l data">Sales of electricity</td>
+<td class="l data">P017</td>
+<td class="l data">Commercial</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">8458</td>
+<td class="r data">14049</td>
+<td class="r data">13972</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIINDUST</td>
+<td class="l data">Sales of electricity</td>
+<td class="l data">P018</td>
+<td class="l data">Industrial</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">15109</td>
+<td class="r data">23609</td>
+<td class="r data">40094</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIMINING</td>
+<td class="l data">Sales of electricity</td>
+<td class="l data">P019</td>
+<td class="l data">Mining</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">9600</td>
+<td class="r data">17620</td>
+<td class="r data">24028</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIAGRIC</td>
+<td class="l data">Sales of electricity</td>
+<td class="l data">P020</td>
+<td class="l data">Agriculture</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">3377</td>
+<td class="r data">5181</td>
+<td class="r data">8430</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIRAIL</td>
+<td class="l data">Sales of electricity</td>
+<td class="l data">P021</td>
+<td class="l data">Railway electric traction</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">1091</td>
+<td class="r data">2057</td>
+<td class="r data">2770</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIEXPORT</td>
+<td class="l data">Sales of electricity</td>
+<td class="l data">P022</td>
+<td class="l data">International (exported)</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">2972</td>
+<td class="r data">5892</td>
+<td class="r data">8100</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIOTHERCUS</td>
+<td class="l data">Sales of electricity</td>
+<td class="l data">P023</td>
+<td class="l data">Other type of customer</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">6120</td>
+<td class="r data">1452</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FITOTELEC</td>
+<td class="l data">Sales of electricity</td>
+<td class="l data">P024</td>
+<td class="l data">Total electricity distributed by type of customer</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">41373</td>
+<td class="r data">78585</td>
+<td class="r data">142514</td>
+<td class="r data">190460</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPWATER</td>
+<td class="l data">Purchases for generation, transmission and distribution of electricity</td>
+<td class="l data">P025</td>
+<td class="l data">Water</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Thousands m3</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">291516</td>
+<td class="r data">317136</td>
+<td class="r data">337375</td>
+<td class="r data">321867</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPCOAL</td>
+<td class="l data">Purchases for generation, transmission and distribution of electricity</td>
+<td class="l data">P026</td>
+<td class="l data">Coal</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Metric ton</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">113484677</td>
+<td class="r data">122951867</td>
+<td class="r data">155096402</td>
+<td class="r data">116459102</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPDIESEL</td>
+<td class="l data">Purchases for generation, transmission and distribution of electricity</td>
+<td class="l data">P027</td>
+<td class="l data">Diesel</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Litres</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">596032174</td>
+<td class="r data">1335564081</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPELEC</td>
+<td class="l data">Purchases for generation, transmission and distribution of electricity</td>
+<td class="l data">P028</td>
+<td class="l data">Electricity</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigawatt hours</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">40693</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FRMWATER</td>
+<td class="l data">Purchases for generation, transmission and distribution of electricity</td>
+<td class="l data">P029</td>
+<td class="l data">Water</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">1085</td>
+<td class="r data">1691</td>
+<td class="r data">2092</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FRMCOAL</td>
+<td class="l data">Purchases for generation, transmission and distribution of electricity</td>
+<td class="l data">P030</td>
+<td class="l data">Coal</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">20949</td>
+<td class="r data">35876</td>
+<td class="r data">44351</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FRMDIESEL</td>
+<td class="l data">Purchases for generation, transmission and distribution of electricity</td>
+<td class="l data">P031</td>
+<td class="l data">Diesel</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">5024</td>
+<td class="r data">8938</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FRMELEC</td>
+<td class="l data">Purchases for generation, transmission and distribution of electricity</td>
+<td class="l data">P032</td>
+<td class="l data">Electricity</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">32176</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FRMOTHERINP</td>
+<td class="l data">Purchases for generation, transmission and distribution of electricity</td>
+<td class="l data">P033</td>
+<td class="l data">Other inputs</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">681</td>
+<td class="r data">3015</td>
+<td class="r data">3432</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FRMOTHERPUR</td>
+<td class="l data">Purchases for generation, transmission and distribution of electricity</td>
+<td class="l data">P034</td>
+<td class="l data">Other purchases</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">12019</td>
+<td class="r data">18722</td>
+<td class="r data">340</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FRMTOTPUR</td>
+<td class="l data">Purchases for generation, transmission and distribution of electricity</td>
+<td class="l data">P035</td>
+<td class="l data">Total purchases and transfer-in of goods</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">34734</td>
+<td class="r data">64328</td>
+<td class="r data">91329</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FGNATGAS</td>
+<td class="l data">Sales of gas</td>
+<td class="l data">P036</td>
+<td class="l data">Natural gas</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigajoules</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">52202000</td>
+<td class="r data">69112366</td>
+<td class="r data">140586831</td>
+<td class="r data">156542682</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FGMETHGAS</td>
+<td class="l data">Sales of gas</td>
+<td class="l data">P037</td>
+<td class="l data">Methane-rich gas</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigajoules</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">24086197</td>
+<td class="r data">28106002</td>
+<td class="r data">28632386</td>
+<td class="r data">27652468</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FGSYNGAS</td>
+<td class="l data">Sales of gas</td>
+<td class="l data">P038</td>
+<td class="l data">Synthetic gas</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigajoules</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">35802000</td>
+<td class="r data">34817835</td>
+<td class="r data">968866</td>
+<td class="r data">131094</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FGTOTGAS</td>
+<td class="l data">Sales of gas</td>
+<td class="l data">P039</td>
+<td class="l data">Total gas distributed in South Africa</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigajoules</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">112090197</td>
+<td class="r data">132036203</td>
+<td class="r data">170188083</td>
+<td class="r data">184326244</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FINATGAS</td>
+<td class="l data">Sales of gas</td>
+<td class="l data">P040</td>
+<td class="l data">Natural gas</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">1918</td>
+<td class="r data">3485</td>
+<td class="r data">7057</td>
+<td class="r data">9135</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIMETHGAS</td>
+<td class="l data">Sales of gas</td>
+<td class="l data">P041</td>
+<td class="l data">Methane-rich gas</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">704</td>
+<td class="r data">1165</td>
+<td class="r data">1879</td>
+<td class="r data">1931</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FISYNGAS</td>
+<td class="l data">Sales of gas</td>
+<td class="l data">P042</td>
+<td class="l data">Synthetic gas</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">866</td>
+<td class="r data">1220</td>
+<td class="r data">70</td>
+<td class="r data">7</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FITOTGAS</td>
+<td class="l data">Sales of gas</td>
+<td class="l data">P043</td>
+<td class="l data">Total gas distributed in South Africa</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">3488</td>
+<td class="r data">5870</td>
+<td class="r data">9006</td>
+<td class="r data">11073</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FGIGRED</td>
+<td class="l data">Sales of gas by type of customer type</td>
+<td class="l data">P044</td>
+<td class="l data">Redistributors</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigajoules</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">7970340</td>
+<td class="r data">10167539</td>
+<td class="r data">11003562</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FGIGHOUSE</td>
+<td class="l data">Sales of gas by type of customer type</td>
+<td class="l data">P045</td>
+<td class="l data">Households</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigajoules</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">169043</td>
+<td class="r data">207967</td>
+<td class="r data">263945</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FGIGCOMM</td>
+<td class="l data">Sales of gas by type of customer type</td>
+<td class="l data">P046</td>
+<td class="l data">Commercial users and farmers</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigajoules</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">51209137</td>
+<td class="r data">49649902</td>
+<td class="r data">51288324</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FGIGIND</td>
+<td class="l data">Sales of gas by type of customer type</td>
+<td class="l data">P047</td>
+<td class="l data">Industrial users</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigajoules</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">72687683</td>
+<td class="r data">110162675</td>
+<td class="r data">121770413</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FGIGCUST</td>
+<td class="l data">Sales of gas by type of customer type</td>
+<td class="l data">P048</td>
+<td class="l data">Total gas distributed by type of customer</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigajoules</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">132036203</td>
+<td class="r data">170188083</td>
+<td class="r data">184326244</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FICUSRED</td>
+<td class="l data">Sales of gas by type of customer type</td>
+<td class="l data">P049</td>
+<td class="l data">Redistributors</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">355</td>
+<td class="r data">594</td>
+<td class="r data">736</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FICUSHOUSE</td>
+<td class="l data">Sales of gas by type of customer type</td>
+<td class="l data">P050</td>
+<td class="l data">Households</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">20</td>
+<td class="r data">26</td>
+<td class="r data">33</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FICUSCOMM</td>
+<td class="l data">Sales of gas by type of customer type</td>
+<td class="l data">P051</td>
+<td class="l data">Commercial users and farmers</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">2531</td>
+<td class="r data">3706</td>
+<td class="r data">3866</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FICUSIND</td>
+<td class="l data">Sales of gas by type of customer type</td>
+<td class="l data">P052</td>
+<td class="l data">Industrial users</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">2964</td>
+<td class="r data">4680</td>
+<td class="r data">6438</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FICUSTOT</td>
+<td class="l data">Sales of gas by type of customer type</td>
+<td class="l data">P053</td>
+<td class="l data">Total gas distributed by type of customer</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">5870</td>
+<td class="r data">9006</td>
+<td class="r data">11073</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPGIGNATGAS</td>
+<td class="l data">Purchases of gas</td>
+<td class="l data">P054</td>
+<td class="l data">Natural gas</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigajoules</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">3231822</td>
+<td class="r data">3364717</td>
+<td class="r data">4270392</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPGIGMETHGAS</td>
+<td class="l data">Purchases of gas</td>
+<td class="l data">P055</td>
+<td class="l data">Methane-rich gas</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigajoules</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">29029978</td>
+<td class="r data">29277619</td>
+<td class="r data">27411300</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPGIGSYNGAS</td>
+<td class="l data">Purchases of gas</td>
+<td class="l data">P056</td>
+<td class="l data">Synthetic gas</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigajoules</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">28199942</td>
+<td class="r data">973051</td>
+<td class="r data">126697</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPGIGRSATOT</td>
+<td class="l data">Purchases of gas</td>
+<td class="l data">P057</td>
+<td class="l data">Total purchases of gas in South Africa</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigajoules</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">22503746</td>
+<td class="r data">60461742</td>
+<td class="r data">33615387</td>
+<td class="r data">31808389</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPGIGGASIMPORT</td>
+<td class="l data">Purchases of gas</td>
+<td class="l data">P058</td>
+<td class="l data">Natural gas imported</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigajoules</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">94245000</td>
+<td class="r data">79180848</td>
+<td class="r data">137933986</td>
+<td class="r data">153558795</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPGIGTOT</td>
+<td class="l data">Purchases of gas</td>
+<td class="l data">P059</td>
+<td class="l data">Total purchases of gas</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">Gigajoules</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">116748746</td>
+<td class="r data">139642590</td>
+<td class="r data">171549373</td>
+<td class="r data">185367184</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPNATGAS</td>
+<td class="l data">Purchases of gas</td>
+<td class="l data">P060</td>
+<td class="l data">Natural gas</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">198</td>
+<td class="r data">231</td>
+<td class="r data">293</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPMETHGAS</td>
+<td class="l data">Purchases of gas</td>
+<td class="l data">P061</td>
+<td class="l data">Methane-rich gas</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">728</td>
+<td class="r data">1724</td>
+<td class="r data">917</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPSYNGAS</td>
+<td class="l data">Purchases of gas</td>
+<td class="l data">P062</td>
+<td class="l data">Synthetic gas</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">534</td>
+<td class="r data">34</td>
+<td class="r data">10</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPRSATOT</td>
+<td class="l data">Purchases of gas</td>
+<td class="l data">P063</td>
+<td class="l data">Total purchases of gas in South Africa</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">450</td>
+<td class="r data">1460</td>
+<td class="r data">1989</td>
+<td class="r data">1220</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPGASIMPORT</td>
+<td class="l data">Purchases of gas</td>
+<td class="l data">P064</td>
+<td class="l data">Natural gas imported</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">603</td>
+<td class="r data">2031</td>
+<td class="r data">3253</td>
+<td class="r data">3339</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPTOT</td>
+<td class="l data">Purchases of gas</td>
+<td class="l data">P065</td>
+<td class="l data">Total purchases of gas</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">1053</td>
+<td class="r data">3491</td>
+<td class="r data">5242</td>
+<td class="r data">4559</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIWREDIST</td>
+<td class="l data">Sales of water by customer type</td>
+<td class="l data">P066</td>
+<td class="l data">Redistributors (mainly municipalities)</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">5139</td>
+<td class="r data">7179</td>
+<td class="r data">11149</td>
+<td class="r data">15948</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIWHOUSE</td>
+<td class="l data">Sales of water by customer type</td>
+<td class="l data">P067</td>
+<td class="l data">Households</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">1847</td>
+<td class="r data">2973</td>
+<td class="r data">2757</td>
+<td class="r data">3156</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIWCOMM</td>
+<td class="l data">Sales of water by customer type</td>
+<td class="l data">P068</td>
+<td class="l data">Commercial users</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">841</td>
+<td class="r data">1340</td>
+<td class="r data">1266</td>
+<td class="r data">1462</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIWINDUST</td>
+<td class="l data">Sales of water by customer type</td>
+<td class="l data">P069</td>
+<td class="l data">Industry</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">173</td>
+<td class="r data">466</td>
+<td class="r data">703</td>
+<td class="r data">709</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIWMINING</td>
+<td class="l data">Sales of water by customer type</td>
+<td class="l data">P070</td>
+<td class="l data">Mining</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">460</td>
+<td class="r data">596</td>
+<td class="r data">983</td>
+<td class="r data">1209</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIWAGRIC</td>
+<td class="l data">Sales of water by customer type</td>
+<td class="l data">P071</td>
+<td class="l data">Agricultural users (farmers)</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">214</td>
+<td class="r data">449</td>
+<td class="r data">312</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIWOTHER</td>
+<td class="l data">Sales of water by customer type</td>
+<td class="l data">P072</td>
+<td class="l data">Other customers</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">34</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">173</td>
+<td class="r data">236</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FIWTOT</td>
+<td class="l data">Sales of water by customer type</td>
+<td class="l data">P073</td>
+<td class="l data">Total water distributed</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">8494</td>
+<td class="r data">12768</td>
+<td class="r data">17480</td>
+<td class="r data">23032</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPWFUEL</td>
+<td class="l data">Purchases for collection, purification and distribution of water</td>
+<td class="l data">P074</td>
+<td class="l data">Fuel</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">31</td>
+<td class="r data">42</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPWRAW</td>
+<td class="l data">Purchases for collection, purification and distribution of water</td>
+<td class="l data">P075</td>
+<td class="l data">Bulk/ raw water</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">7637</td>
+<td class="r data">10980</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPWCHEM</td>
+<td class="l data">Purchases for collection, purification and distribution of water</td>
+<td class="l data">P076</td>
+<td class="l data">Water treatment chemicals</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">394</td>
+<td class="r data">580</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPWPARTS</td>
+<td class="l data">Purchases for collection, purification and distribution of water</td>
+<td class="l data">P077</td>
+<td class="l data">Parts and spares</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">124</td>
+<td class="r data">149</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPWOTHER</td>
+<td class="l data">Purchases for collection, purification and distribution of water</td>
+<td class="l data">P078</td>
+<td class="l data">Other purchases and transfers-in</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">677</td>
+<td class="r data">1195</td>
+</tr>
+<tr>
+<td class="l data">Report No. 41-01-02</td>
+<td class="l data">Electricity, gas and water supply industry</td>
+<td class="l data">FPWTOT</td>
+<td class="l data">Purchases for collection, purification and distribution of water</td>
+<td class="l data">P079</td>
+<td class="l data">Total purchases and transfer-in of goods</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2016</td>
+<td class="r data">2006</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">8863</td>
+<td class="r data">12946</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>
