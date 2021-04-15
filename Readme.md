@@ -107,6 +107,8 @@ To run any of the implementations located in src simply select a file and load o
 
 `Note: The values for the OECD were converted to rands using value of exchange during the week of the 10th of january 2020, which is the period near the release of the data.`
 
+![](https://komarev.com/ghpvc/?username=your-github-neli&color=green) 
+
 <!-- Primary Meta Tags -->
 <meta name="title" content="Factors that affect manufacturing GDP SA perspective">
 <meta name="description" content="A study utilizing backward and forward selection to understand if the electricity availability, number of workers and others variables influence manufacturing GDP. My first Github Project 😄! ">
