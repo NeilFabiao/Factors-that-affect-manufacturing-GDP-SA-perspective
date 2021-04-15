@@ -115,7 +115,7 @@ To run any of the implementations located in src simply select a file and load o
 <meta property="og:title" content="Factors that affect manufacturing GDP SA perspective" />
 <meta property="og:url" content="https://github.com/NeilFabiao/Factors-that-affect-manufacturing-GDP-SA-perspective" />
 <meta property="og:description" content="A study utilizing backward and forward selection to understand if the electricity availability, number of workers and others variables influence manufacturing GDP. My first Github Project 😄!">
-<meta property="og:image" content="/Project/output/extra1design.png">
+<meta property="og:image" content="/Project/img/extra1design.png">
 <meta property="og:type" content="article" />
 
 
