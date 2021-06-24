@@ -94,7 +94,7 @@ For the secondary dataset, there is PPI index coming from [Stats SA time series 
 
 ## Who do I talk to?
 
-* Repo owner Neil Fabião -> @neilfabiao or neilfabiao@gmail.com
+* Repo owner Neil Fabião -> @neilfabiao
 
 ## Extra info 
 This project was done using jupyter-notebook, and in the Project folder there are 3 other subsequent folders namely:
